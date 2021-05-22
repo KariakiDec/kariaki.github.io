@@ -1,0 +1,933 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;light&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#40E0D0">
+  <meta name="description" content="某摸鱼老年人的休闲咖啡厅">
+  <meta name="author" content="Kariaki">
+  <meta name="keywords" content="">
+  
+  <title>\[资料存档\]地球天空—Bedwars模式设置流程 - The Polaris</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"kariaki.moe","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>The Polaris 休息站</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/sky.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="\[资料存档\]地球天空—Bedwars模式设置流程">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-05-22 13:05" pubdate>
+        2021年5月22日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      27
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">\[资料存档\]地球天空—Bedwars模式设置流程</h1>
+            
+            <div class="markdown-body">
+              <blockquote>
+<p>这是一篇服务器内部说明文档的存档</p>
+<p>所有内容仅供内部人员参考</p>
+<p>不包含任何文件资源的下载</p>
+<p>这篇文档似乎写于2019年</p>
+</blockquote>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>[TOC]</p>
+<hr>
+<blockquote>
+<p>Bedwars 8.0.0 需要 ProtocolLib</p>
+</blockquote>
+<h3 id="零-范例"><a href="#零-范例" class="headerlink" title="零.范例"></a>零.范例</h3><p>在这里先贴出一个标准的Config文件</p>
+<blockquote>
+<p>MapName: 甜心蛋糕</p>
+<p>ServerID: 146</p>
+<p>ServerMode: MEGA</p>
+<p>BorderDistance: 15</p>
+<p>FullMapDistance: 85</p>
+<p>MidDistance: 45</p>
+<p>Locations:</p>
+<p>redSpawner:</p>
+<p>​    world: world</p>
+<p>​    x: 9.699999988079071</p>
+<p>​    y: 58.0</p>
+<p>​    z: 67.64621999024061</p>
+<p>​    pitch: 4.8123846</p>
+<p>​    yaw: 89.7088</p>
+<p>redSpawn:</p>
+<p>​    world: world</p>
+<p>​    x: 5.534186707922221</p>
+<p>​    y: 57.5</p>
+<p>​    z: 66.8853138724482</p>
+<p>​    pitch: 10.606035</p>
+<p>​    yaw: -181.94742</p>
+<p>redBed:</p>
+<p>​    world: world</p>
+<p>​    x: 3.0</p>
+<p>​    y: 55.0</p>
+<p>​    z: 61.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>redBaseShop:</p>
+<p>​    world: world</p>
+<p>​    x: 9.36242694814498</p>
+<p>​    y: 54.5</p>
+<p>​    z: 61.473214760806925</p>
+<p>​    pitch: -0.98112595</p>
+<p>​    yaw: -270.20166</p>
+<p>redUpgradeShop:</p>
+<p>​    world: world</p>
+<p>​    x: 9.364005357384281</p>
+<p>​    y: 54.5</p>
+<p>​    z: 62.6999999880791</p>
+<p>​    pitch: -0.98112595</p>
+<p>​    yaw: -270.20166</p>
+<p>blueBed:</p>
+<p>​    world: world</p>
+<p>​    x: -49.0</p>
+<p>​    y: 55.0</p>
+<p>​    z: -1.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>blueSpawner:</p>
+<p>​    world: world</p>
+<p>​    x: -54.49055257241766</p>
+<p>​    y: 58.0</p>
+<p>​    z: 5.599018961076187</p>
+<p>​    pitch: 11.464321</p>
+<p>​    yaw: -178.79039</p>
+<p>blueSpawn:</p>
+<p>​    world: world</p>
+<p>​    x: -55.416850227563515</p>
+<p>​    y: 58.0</p>
+<p>​    z: 1.4123596580077342</p>
+<p>​    pitch: -0.1228838</p>
+<p>​    yaw: -86.95087</p>
+<p>blueUpgradeShop:</p>
+<p>​    world: world</p>
+<p>​    x: -49.610175671891845</p>
+<p>​    y: 54.5</p>
+<p>​    z: 5.30254149797921</p>
+<p>​    pitch: 1.3792354</p>
+<p>​    yaw: -178.79071</p>
+<p>blueBaseShop:</p>
+<p>​    world: world</p>
+<p>​    x: -48.327602158912676</p>
+<p>​    y: 54.5</p>
+<p>​    z: 5.315619226895169</p>
+<p>​    pitch: 1.3792354</p>
+<p>​    yaw: -178.79071</p>
+<p>greenBed:</p>
+<p>​    world: world</p>
+<p>​    x: 13.0</p>
+<p>​    y: 55.0</p>
+<p>​    z: -53.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>greenSpawner:</p>
+<p>​    world: world</p>
+<p>​    x: 7.300000011920929</p>
+<p>​    y: 58.0</p>
+<p>​    z: -58.624982036743134</p>
+<p>​    pitch: 0.94999135</p>
+<p>​    yaw: -88.23876</p>
+<p>greenSpawn:</p>
+<p>​    world: world</p>
+<p>​    x: 10.574698985700623</p>
+<p>​    y: 58.0</p>
+<p>​    z: -60.636312916094155</p>
+<p>​    pitch: 7.1728516</p>
+<p>​    yaw: 1.4549747</p>
+<p>greenUpgradeShop:</p>
+<p>​    world: world</p>
+<p>​    x: 7.434832390455481</p>
+<p>​    y: 54.5</p>
+<p>​    z: -53.627064683354305</p>
+<p>​    pitch: 0.091662526</p>
+<p>​    yaw: -89.31184</p>
+<p>greenBaseShop:</p>
+<p>​    world: world</p>
+<p>​    x: 7.429195136238773</p>
+<p>​    y: 54.5</p>
+<p>​    z: -52.55440493341318</p>
+<p>​    pitch: 0.091662526</p>
+<p>​    yaw: -89.31184</p>
+<p>yellowSpawner:</p>
+<p>​    world: world</p>
+<p>​    x: 71.43028942297553</p>
+<p>​    y: 58.0</p>
+<p>​    z: 3.3930984146707877</p>
+<p>​    pitch: -1.6248082</p>
+<p>​    yaw: -0.753479</p>
+<p>yellowSpawn:</p>
+<p>​    world: world</p>
+<p>​    x: 73.57347193300795</p>
+<p>​    y: 58.0</p>
+<p>​    z: 6.920362878187078</p>
+<p>​    pitch: 10.820763</p>
+<p>​    yaw: -270.84506</p>
+<p>yellowBed:</p>
+<p>​    world: world</p>
+<p>​    x: 65.0</p>
+<p>​    y: 55.0</p>
+<p>​    z: 9.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>yellowUpgradeShop:</p>
+<p>​    world: world</p>
+<p>​    x: 66.45095445765018</p>
+<p>​    y: 54.5</p>
+<p>​    z: 3.5105352029287973</p>
+<p>​    pitch: -3.1268435</p>
+<p>​    yaw: -359.6802</p>
+<p>yellowBaseShop:</p>
+<p>​    world: world</p>
+<p>​    x: 65.41348722723458</p>
+<p>​    y: 54.5</p>
+<p>​    z: 3.5071528026102827</p>
+<p>​    pitch: -3.1268435</p>
+<p>​    yaw: -359.6802</p>
+<p>DiamondSpawner01:</p>
+<p>​    world: world</p>
+<p>​    x: 80.0</p>
+<p>​    y: 57.0</p>
+<p>​    z: 25.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>DiamondSpawner02:</p>
+<p>​    world: world</p>
+<p>​    x: 29.0</p>
+<p>​    y: 55.0</p>
+<p>​    z: 76.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>DiamondSpawner03:</p>
+<p>​    world: world</p>
+<p>​    x: -13.0</p>
+<p>​    y: 57.0</p>
+<p>​    z: 76.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>DiamondSpawner04:</p>
+<p>​    world: world</p>
+<p>​    x: -64.0</p>
+<p>​    y: 55.0</p>
+<p>​    z: 25.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>DiamondSpawner05:</p>
+<p>​    world: world</p>
+<p>​    x: -64.0</p>
+<p>​    y: 57.0</p>
+<p>​    z: -17.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>DiamondSpawner06:</p>
+<p>​    world: world</p>
+<p>​    x: -13.0</p>
+<p>​    y: 55.0</p>
+<p>​    z: -68.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>DiamondSpawner07:</p>
+<p>​    world: world</p>
+<p>​    x: 29.0</p>
+<p>​    y: 57.0</p>
+<p>​    z: -68.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>DiamondSpawner08:</p>
+<p>​    world: world</p>
+<p>​    x: 80.0</p>
+<p>​    y: 55.0</p>
+<p>​    z: -17.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>EmeraldSpawner01:</p>
+<p>​    world: world</p>
+<p>​    x: -7.0</p>
+<p>​    y: 53.0</p>
+<p>​    z: 4.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>EmeraldSpawner02:</p>
+<p>​    world: world</p>
+<p>​    x: 8.0</p>
+<p>​    y: 53.0</p>
+<p>​    z: -11.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>EmeraldSpawner03:</p>
+<p>​    world: world</p>
+<p>​    x: 23.0</p>
+<p>​    y: 53.0</p>
+<p>​    z: 4.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>EmeraldSpawner04:</p>
+<p>​    world: world</p>
+<p>​    x: 8.0</p>
+<p>​    y: 53.0</p>
+<p>​    z: 19.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>EmeraldSpawner05:</p>
+<p>​    world: world</p>
+<p>​    x: 8.0</p>
+<p>​    y: 70.0</p>
+<p>​    z: 4.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>MidCenter:</p>
+<p>​    world: world</p>
+<p>​    x: 8.39080838044865</p>
+<p>​    y: 53.0</p>
+<p>​    z: 4.514200026775878</p>
+<p>​    pitch: 90.0</p>
+<p>​    yaw: -292.20554</p>
+<p>MidShop:</p>
+<p>​    world: world</p>
+<p>​    x: 10.82077787149204</p>
+<p>​    y: 54.0</p>
+<p>​    z: 2.399907624985803</p>
+<p>​    pitch: 6.3143806</p>
+<p>​    yaw: -311.15283</p>
+<p>EnchantShop:</p>
+<p>​    world: world</p>
+<p>​    x: 6.471549177193599</p>
+<p>​    y: 54.0</p>
+<p>​    z: 6.576511758227233</p>
+<p>​    pitch: 4.597744</p>
+<p>​    yaw: -136.76434</p>
+<p>greenBaseFirst:</p>
+<p>​    world: world</p>
+<p>​    x: -5.0</p>
+<p>​    y: 44.0</p>
+<p>​    z: -42.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>greenBaseSecond:</p>
+<p>​    world: world</p>
+<p>​    x: 21.0</p>
+<p>​    y: 95.0</p>
+<p>​    z: -70.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>yellowBaseFirst:</p>
+<p>​    world: world</p>
+<p>​    x: 55.0</p>
+<p>​    y: 43.0</p>
+<p>​    z: -7.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>yellowBaseSecond:</p>
+<p>​    world: world</p>
+<p>​    x: 80.0</p>
+<p>​    y: 84.0</p>
+<p>​    z: 14.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>redBaseFirst:</p>
+<p>​    world: world</p>
+<p>​    x: -5.0</p>
+<p>​    y: 44.0</p>
+<p>​    z: 50.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>redBaseSecond:</p>
+<p>​    world: world</p>
+<p>​    x: 17.0</p>
+<p>​    y: 82.0</p>
+<p>​    z: 76.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>blueBaseFirst:</p>
+<p>​    world: world</p>
+<p>​    x: -40.0</p>
+<p>​    y: 41.0</p>
+<p>​    z: 14.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>blueBaseSecond:</p>
+<p>​    world: world</p>
+<p>​    x: -66.0</p>
+<p>​    y: 91.0</p>
+<p>​    z: -7.0</p>
+<p>​    pitch: 0.0</p>
+<p>​    yaw: 0.0</p>
+<p>Lobby:</p>
+<p>​    world: world</p>
+<p>​    x: 16.33862995282855</p>
+<p>​    y: 77.78765252493908</p>
+<p>​    z: 200.50642022060222</p>
+<p>​    pitch: 3.954012</p>
+<p>​    yaw: 90.995804</p>
+</blockquote>
+<hr>
+<h3 id="一-从4个队伍进行初步设置"><a href="#一-从4个队伍进行初步设置" class="headerlink" title="一.从4个队伍进行初步设置"></a>一.从4个队伍进行初步设置</h3><p>以下中队伍的相关设置,请先对照对应的队伍颜色与英文名</p>
+<table>
+<thead>
+<tr>
+<th>队伍名</th>
+<th>队伍内名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>黄队</td>
+<td>yellow</td>
+</tr>
+<tr>
+<td>绿队</td>
+<td>green</td>
+</tr>
+<tr>
+<td>蓝队</td>
+<td>blue</td>
+</tr>
+<tr>
+<td>红队</td>
+<td>red</td>
+</tr>
+</tbody></table>
+<p>游戏中使用/dcl 与 /dbl 来以对应的Key值保存坐标到Config. </p>
+<p>游戏将会读取固定的Key值（匹配大小写）来读取坐标</p>
+<blockquote>
+<p>/dcl - 将会保存当前玩家所在的坐标（包含Yaw 与 Pitch）</p>
+<p>/dbl - 将会保存通过下届之星右键所标记的方块的坐标（不包含Yaw 与 Pitch), 必须在通过下届之星右击要设定的方块后才能设定. </p>
+</blockquote>
+<p>两个方式所设置的坐标都是通用的, 可以通过保存相同Key值得坐标来覆盖.</p>
+<p>一个队伍所单独设置的 ({team}为上表所对应的队伍内部名)</p>
+<table>
+<thead>
+<tr>
+<th align="center">Key值</th>
+<th align="center">作用</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">{team}Spawner</td>
+<td align="center">队伍的资源生成器</td>
+<td align="center">使用/dbl</td>
+</tr>
+<tr>
+<td align="center">{team}Spawn</td>
+<td align="center">队伍的出生点</td>
+<td align="center">使用/dcl</td>
+</tr>
+<tr>
+<td align="center">{team}Bed</td>
+<td align="center">队伍的床</td>
+<td align="center">使用/dbl, 推荐右击床头</td>
+</tr>
+<tr>
+<td align="center">{team}BaseShop</td>
+<td align="center">队伍的装备商店</td>
+<td align="center">使用/dcl, 注意玩家角度</td>
+</tr>
+<tr>
+<td align="center">{team}UpgradeShop</td>
+<td align="center">队伍的升级商店</td>
+<td align="center">使用/dcl, 注意玩家角度</td>
+</tr>
+<tr>
+<td align="center">{team}BaseFirst</td>
+<td align="center">队伍基地范围的点#1*</td>
+<td align="center">使用/dbl, 与另外一点构成一个区域</td>
+</tr>
+<tr>
+<td align="center">{team}BaseSecond</td>
+<td align="center">队伍基地范围的点#2*</td>
+<td align="center">使用/dbl, 与另外一个点构成一个区域</td>
+</tr>
+</tbody></table>
+<p>*<strong>基地范围用于升级中的治疗升级与基地陷阱的触发范围</strong></p>
+<h3 id="二-其他资源器的设置"><a href="#二-其他资源器的设置" class="headerlink" title="二.其他资源器的设置"></a>二.其他资源器的设置</h3><p>所有的资源生成器都通过 /dbl 所设置</p>
+<p><img src="https://i.loli.net/2018/06/30/5b371827914cb.png" srcset="/img/loading.gif" lazyload alt="一个资源生成器范例"></p>
+<p>推荐按照以上方式, 使用海绵作为标记, 使用下届之星右击海绵后来创建资源生成器.</p>
+<p><em>铁块为范例, 实际设置中应为 钻石块 或 绿宝石块, 图中挖开地下只是为了方便说明</em></p>
+<p>下表为不同资源对应的生成点 Key值格式({Random}代表随意编写,推荐为01, 02等编号, 为了区分顺序, 避免重复)</p>
+<table>
+<thead>
+<tr>
+<th align="center">资源</th>
+<th align="center">Key值格式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">钻石</td>
+<td align="center">DiamondSpawner{Random}</td>
+</tr>
+<tr>
+<td align="center">绿宝石</td>
+<td align="center">EmeraldSpawner{Random}</td>
+</tr>
+</tbody></table>
+<h3 id="三-其他的地图设置"><a href="#三-其他的地图设置" class="headerlink" title="三.其他的地图设置"></a>三.其他的地图设置</h3><p>下表为其他的地图设置, 带*的为必定设置.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Key值</th>
+<th align="center">作用</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MidCenter*</td>
+<td align="center">地图边界的中央点</td>
+<td align="center">使用/dbl 或 /dcl 皆可</td>
+</tr>
+<tr>
+<td align="center">MidShop*</td>
+<td align="center">地图中央的神秘商人</td>
+<td align="center">使用/dcl, 注意玩家角度</td>
+</tr>
+<tr>
+<td align="center">EnchantShop*</td>
+<td align="center">地图中央的附魔商人</td>
+<td align="center">使用/dcl, 注意玩家角度</td>
+</tr>
+<tr>
+<td align="center">SpectatorSpawn</td>
+<td align="center">重生玩家/观战者出生点</td>
+<td align="center">使用/dcl, 如果未设置则会使用MidCenter</td>
+</tr>
+</tbody></table>
+<h3 id="四-边界与游戏信息的相关设置"><a href="#四-边界与游戏信息的相关设置" class="headerlink" title="四.边界与游戏信息的相关设置"></a>四.边界与游戏信息的相关设置</h3><blockquote>
+<p>MapName: 甜心蛋糕 # 地图名</p>
+<p>ServerID: 146 # 给予玩家显示的随机服务器ID, 在每次开服都会变换</p>
+<p>ServerMode: MEGA # 游戏模式,必须改为MEGA(虽然我默认写的是TEAM 23333)</p>
+<p>BorderDistance: 15 # 游戏开始时边界尚未开放的边界大小,即队伍岛屿的范围. 为 <strong>边界直径</strong></p>
+<p>FullMapDistance: 85 # 整张地图的边界大小, 即全图的范围. 为 <strong>边界直径</strong></p>
+<p>MidDistance: 45 # 当死亡竞赛开始后边界所收缩到的比边界大小, 即为地图中央的范围. 为<strong>边界直径</strong></p>
+</blockquote>
+<p>请将这些设置在服务器关闭后保存</p>
+<p>当地图设置完成后,需要在plugins/Bedwars/WorldBackups中复制一份地图完整的地图文件夹(默认为World)</p>
+<h3 id="五-大厅设置"><a href="#五-大厅设置" class="headerlink" title="五.大厅设置"></a>五.大厅设置</h3><p>由于插件设计远古, 大厅过早设置则会妨碍地图的设置过程, 所以大厅则放在最后设置</p>
+<p>在到达大厅出生点位置后, 推荐飞起来2~3格防止玩家传送卡地,</p>
+<p>使用**/dcl Lobby** 来保存坐标.</p>
+<p>完成后即可重启服务器.</p>
+<h3 id="六-最后的测试"><a href="#六-最后的测试" class="headerlink" title="六.最后的测试"></a>六.最后的测试</h3><p>在相关设置完成后, 通过**/forcestart**来强制开启游戏进行测试.</p>
+<hr>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%B5%84%E6%96%99/">资料</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/05/22/%E6%9C%AC%E4%BC%91%E6%81%AF%E7%AB%99%E5%87%BA%E7%8E%B0%E7%9A%84%E5%8E%9F%E5%9B%A0/">
+                        <span class="hidden-mobile">本休息站出现的原因</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#gitalk-container', function() {
+      Fluid.utils.createCssLink('/css/gitalk.css')
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js', function() {
+        var options = Object.assign(
+          {"clientID":"f19b461a0235c4998c87","clientSecret":"8c60591b92576a4194fe5a0193811441516e0a7d","repo":"kariakidec.github.io","owner":"KariakiDec","admin":["KariakiDec"],"language":"zh-CN","labels":["Gitalk"],"number":1,"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":false,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {
+            id: '936c361b3d2a8e083426d2f50cae57a9'
+          }
+        )
+        var gitalk = new Gitalk(options);
+        gitalk.render('gitalk-container');
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      jQuery('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      jQuery('#modalSearch').on('shown.bs.modal', function() {
+        jQuery('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
