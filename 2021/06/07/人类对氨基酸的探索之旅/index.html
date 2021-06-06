@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;light&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#40E0D0">
+  <meta name="description" content="某摸鱼老年人的休闲咖啡厅">
+  <meta name="author" content="Kariaki">
+  <meta name="keywords" content="">
+  
+  <title>人类对氨基酸的探索之旅 - The Polaris</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"kariaki.moe","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>The Polaris 休息站</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/sky.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="人类对氨基酸的探索之旅">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-06-07 05:30" pubdate>
+        2021年6月7日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      4.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      45
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">人类对氨基酸的探索之旅</h1>
+            
+            <div class="markdown-body">
+              <p><img src="https://z3.ax1x.com/2021/06/07/2dQ74A.md.png" srcset="/img/loading.gif" lazyload alt="2dQ74A.md.png"></p>
+<h2 id="（一）从蛋白质到氨基酸"><a href="#（一）从蛋白质到氨基酸" class="headerlink" title="（一）从蛋白质到氨基酸"></a>（一）从蛋白质到氨基酸</h2><p>讲氨基酸, 那一定要提到的便是蛋白质, 1878年恩格斯提出 “生命是蛋白体的存在形式” (《反杜林论》) 便可知当时的人们已经了解蛋白质对生命体的重要性, 并在之后的研究中发现蛋白质承担生命体的各种活动, 蛋白质的地位从一种尚未探明的营养成分飞跃至生理活动的承担者. 于是人类对蛋白质的探索开始了。</p>
+<p>我们如今都知道蛋白质是一个种十分庞大的生物大分子, 而其构成的<strong>单体</strong> 就是氨基酸了。</p>
+<p>如今科学已经发现了 22种 构成蛋白质的氨基酸（准确来说是1种亚氨基酸和21种氨基酸）。其中20种是常见的氨基酸, 这正是在旧版高中生物课本中被介绍的, 随着后续研究, 人们发现了另外2种不常见的氨基酸, 它们所对应密码子在一般情况下都为<strong>终止</strong>（UGA、UAG)，但在一些情况下会出现 硒代半胱氨酸（Sec）与吡咯赖氨酸（Pyl）。如果你对前20种氨基酸略有了解应该能知道这两种是前20种常见氨基酸稍作修饰的产物 [半胱氨酸(Cys)与赖氨酸(Lys)]。如今新版的高中生物课本已补充添加了硒代半胱氨酸。</p>
+<h2 id="（二）人类对氨基酸的探索"><a href="#（二）人类对氨基酸的探索" class="headerlink" title="（二）人类对氨基酸的探索"></a>（二）人类对氨基酸的探索</h2><h3 id="首先被发现的氨基酸——天冬氨酸、半胱氨酸"><a href="#首先被发现的氨基酸——天冬氨酸、半胱氨酸" class="headerlink" title="首先被发现的氨基酸——天冬氨酸、半胱氨酸"></a>首先被发现的氨基酸——天冬氨酸、半胱氨酸</h3><p>1806年, 法国化学家 <em>路易-尼古拉·沃克兰</em> 与 <em>皮埃尔·罗比凯</em> 从芦笋 (<em>Asparagus officinalis</em>) 中分离出了一种氨基酸, 这是人类第一次从生物中分离出氨基酸, 由与芦笋属于天门冬科天门冬属, 他们便将此种氨基酸命名为 <strong>天冬酰胺</strong> (Asn)。值得一提的是, 天冬酰胺是一种代糖——阿斯巴甜 (Aspartame) 的原料之一。</p>
+<p><img src="https://i.loli.net/2021/06/07/7wE2rIFlpqjkRfd.png" srcset="/img/loading.gif" lazyload alt="Asn.png"></p>
+<p>而下一个被发现的氨基酸则是对蛋白质结构十分重要的一种氨基酸 —— <strong>半胱氨酸</strong> (Cys), 它在1810年由英国化学家 威廉·杜德·沃尔斯顿 在研究他病人的 膀胱结石 中发现。他发现的是半胱氨酸的二聚体——胱氨酸。事实上半胱氨酸的胱指的便是膀胱，胱氨酸英文cystine（胱氨酸）来自希腊语 kystis, 意为膀胱。</p>
+<p><img src="https://i.loli.net/2021/06/07/sQWHXzTLotvuFDN.png" srcset="/img/loading.gif" lazyload alt="Cys.png"></p>
+<p>半胱氨酸的巯基（-SH）对其性质具有十分重要的影响, <strong>两个半胱氨酸的-SH在一定条件下被氧化成为 -S-S-</strong> (称二硫键, 或二硫桥), 它对蛋白质结构的稳定性起着十分重要的作用。例如头发，其组成蛋白为<strong>α-角蛋白</strong>——一种纤维状蛋白，构成其的二级结构主要是α-螺旋, 2条α-螺旋以左手超螺旋的形式凝聚成α-角蛋白。在其肽链中的半胱氨酸相互形成二硫键, 这是一种共价作用十分稳定, 而形成α-螺旋的主要作用是氢键, 它比较容易被破坏（如加热）。当头发面临高温（如热水）时, 它便不那么坚挺，这是因为α-螺旋的氢键被破坏, 而当温度恢复正常, 其中的-S-S-键则充当着α-螺旋还原的恢复力, 它们将肽链”拉”回原来的构象, 重新形成氢键, α-角蛋白的性质就恢复了。而使得头发永久性卷曲（也叫烫发）则是通过人工手段改变-S-S-键的分布, 通过还原剂将-S-S-破坏, 并使此时的头发中的α-角蛋白按所需的造型分布，再通过氧化剂重新构建-S-S-, 即可通过新生成的-S-S-改变α-角蛋白的初始构象。</p>
+<p>对于阿斯巴甜, 这里我想提到的一个因化学上立体异构与蛋白质的立体专一性而造成的现象。氨基酸中除<strong>甘氨酸</strong>（其R基为H）外, 都拥有其<strong>旋光异构体</strong>（或者说 手性异构体）, 这使得氨基酸分为<strong>L-氨基酸</strong>与<strong>D-氨基酸</strong>，这是因为氨基酸中心的α-碳是一个手性碳原子。构成大部分生物体蛋白质的氨基酸都是L-氨基酸。同样的，天冬氨酰也具有L-天冬氨酰和D-天冬氨酰, 由这两种氨基酸组成的阿斯巴甜具有完全相反的生物活性——也就是味道。味蕾感受的蛋白质也是L-氨基酸组成的, 因为 立体专一性, 只有含有L-氨基酸的物质才能与受体结合, 使你感受到甜味, 而D-氨基酸则不能。</p>
+<p><img src="https://i.loli.net/2021/06/07/KIYtQAViraZmc38.png" srcset="/img/loading.gif" lazyload alt="D-L.png"></p>
+<h3 id="随后人们发现的氨基酸"><a href="#随后人们发现的氨基酸" class="headerlink" title="随后人们发现的氨基酸"></a>随后人们发现的氨基酸</h3><p>剩余的氨基酸以接下来的顺序被人发现：甘氨酸（1820年）、亮氨酸（1820年）、酪氨酸（1849年）、丝氨酸（1865年）、谷氨酸（1866年）、天冬氨酸（1868年）、苯丙氨酸（1881年）、丙氨酸（1888年）、赖氨酸（1889年）、精氨酸（1895年）、组氨酸（1899年）、半胱氨酸（1899年，先前发现的为胱氨酸，直到1899年才成功将胱氨酸分解为半胱氨酸）。</p>
+<p>我们接下来按一定分类简单讲解这些氨基酸的发现历史与命名。</p>
+<h3 id="甘氨酸（Gly、G）"><a href="#甘氨酸（Gly、G）" class="headerlink" title="甘氨酸（Gly、G）"></a>甘氨酸（Gly、G）</h3><p><img src="https://i.loli.net/2021/06/07/nEeVgsoTDkNfStu.png" srcset="/img/loading.gif" lazyload alt="Gly.png"></p>
+<p>它是最简单的氨基酸，R基为氢原子（-H）。是一种具有”柔韧性”的氨基酸。它是一种非极性脂肪烃氨基酸，疏水。</p>
+<p>与1820年由法国化学家 <em>亨利·布拉康诺</em> (H. Braconnot) 在将硫酸与<strong>明胶</strong>共热使其水解时发现，由于氨基酸的晶体通常为白色固体, 他一开始称其为 “明胶糖” (sugar of gelatin)。但是另一位法国化学家 <em>布珊高</em> 发现其含有氮元素。后来由瑞典化学家 <em>贝尔塞柳斯</em>  命名为 <strong>甘氨酸</strong>（Glycine）。甘氨酸作为氨基酸一种的身份直到1858年才被法国化学家 <em>奥古斯特・卡胡尔</em>（Auguste Cahours）所揭示</p>
+<p>甘氨酸的英文名Glycine来自于希腊语γλυκύς, 意味 “甜味的”（这与葡萄糖的英文名Glucose也有关）</p>
+<h3 id="亮氨酸、异亮氨酸（Leu-Ile、L-I）"><a href="#亮氨酸、异亮氨酸（Leu-Ile、L-I）" class="headerlink" title="亮氨酸、异亮氨酸（Leu - Ile、L - I）"></a>亮氨酸、异亮氨酸（Leu - Ile、L - I）</h3><p>它们是互为同分异构体的氨基酸（为<strong>顺反异构</strong>）。它是一种非极性脂肪烃氨基酸，疏水。</p>
+<p>亮氨酸首先在1819年从<strong>奶酪</strong>中分离出来, 但其晶体则是到了1820年由上文提到的 布拉康诺(H.Braconnot) 从<strong>肌肉与羊毛</strong>的酸水解物中提取出来。之后它的同分异构体异亮氨酸也被发现。亮氨酸的晶体十分闪亮，因此得名。</p>
+<p>亮氨酸和异亮氨酸都是人体生理活动所需要的<strong>必需氨基酸</strong>, 必需氨基酸总共有：<strong>缬氨酸</strong>（Val）、<strong>亮氨酸</strong>（Leu）、<strong>异亮氨酸</strong>（Ile）、<strong>苯丙氨酸</strong>（Phe）、<strong>苏氨酸</strong>（Thr）、<strong>色氨酸</strong>（Trp）、<strong>甲硫氨酸</strong>（Leu）、<strong>赖氨酸</strong>（Lys）、<strong>组氨酸</strong>（His，婴儿所必须）</p>
+<p><img src="https://i.loli.net/2021/06/07/4CvdngqIpcQ9aFS.png" srcset="/img/loading.gif" lazyload alt="Leu.png"></p>
+<p><em>亮氨酸</em></p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dMfoj.png" srcset="/img/loading.gif" lazyload alt="Ile.png"></p>
+<p><em>异亮氨酸</em></p>
+<p>可以观察到，亮氨酸和异亮氨酸的区别在于侧链中γ碳所连接的甲基(-CH₃)的位置不同</p>
+<h3 id="缬氨酸（Val、V）"><a href="#缬氨酸（Val、V）" class="headerlink" title="缬氨酸（Val、V）"></a>缬氨酸（Val、V）</h3><p>它是一种非极性脂肪烃氨基酸，疏水。</p>
+<p><img src="https://i.loli.net/2021/06/07/4vGxyBWu98wd6lV.png" srcset="/img/loading.gif" lazyload alt="Val.png"></p>
+<p>它首先与1901年由 Hermann Emill Fischer 在 奶酪中分离。其名称缬氨酸中的缬，来自于一种植物——缬草 (<em>Valeriana officinalis</em>)。原因是缬氨酸在这种植物的根部大量存在。</p>
+<h3 id="脯氨酸（Pro、P）"><a href="#脯氨酸（Pro、P）" class="headerlink" title="脯氨酸（Pro、P）"></a>脯氨酸（Pro、P）</h3><p>脯氨酸是一种亚氨基酸，它的α-氨基和α-H形成一个环状结构, 这样的结构使得它在一众氨基酸中非常具有个性——对位置十分挑剔。</p>
+<p><img src="https://i.loli.net/2021/06/07/VkCXLA4gUoWrb7Y.png" srcset="/img/loading.gif" lazyload alt="Pro.png"></p>
+<p>在氨基酸形成一级结构肽链时, 2个氨基酸之间<strong>脱水缩合</strong>形成 <strong>肽键</strong> (也叫 酰胺键) , 通常是这么形成的</p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dMzf1.md.png" srcset="/img/loading.gif" lazyload alt="2dMzf1.md.png"></p>
+<p>其中, 肽键连同其连接的2个α-C被称为肽基，肽基具有顺反异构的性质, 在一般情况下, 氨基酸之间形成的 肽键都是反式结构（如上图所示），而若一个氨基酸与脯氨酸形成肽键, 则在酶的催化下能够形成顺式结构的肽键。这是为了稳定其结构。</p>
+<p>不仅如此, 脯氨酸还将阻挠其所在肽链形成 α-螺旋结构, 结果有可能成为β-片结构。</p>
+<p>脯氨酸由Fischer从奶酪(酪蛋白) 的分解产物中分离出来, 其名称 脯有”肉干、果干”之意，它是胶原蛋白的重要构成成分。</p>
+<h3 id="丙氨酸、甲硫氨酸、苯丙氨酸（Ala-Met-Phe、A-M-F）"><a href="#丙氨酸、甲硫氨酸、苯丙氨酸（Ala-Met-Phe、A-M-F）" class="headerlink" title="丙氨酸、甲硫氨酸、苯丙氨酸（Ala - Met - Phe、A - M - F）"></a>丙氨酸、甲硫氨酸、苯丙氨酸（Ala - Met - Phe、A - M - F）</h3><p>之所以将这三种放在一起则是因为它们都符合有机物命名的规则，并没有特殊的名称。</p>
+<p><strong>丙氨酸</strong>的侧链简单程度仅次于甘氨酸, 它为甲基（-CH₃）。它是一种非极性脂肪烃氨基酸，疏水。</p>
+<p><img src="https://i.loli.net/2021/06/07/FC9PO3h857WINqQ.png" srcset="/img/loading.gif" lazyload alt="Ala.png"></p>
+<p><strong>甲硫氨酸</strong>的侧链将稍微复杂一点（-CH₂-CH₂-S-CH₃），它一般是蛋白质转录翻译过程中发挥启动作用的氨基酸。其密码子为AUG。</p>
+<p><strong>苯丙氨酸</strong>则是芳香族氨基酸的一员，极性的可溶于水。苯丙氨酸首次由Emil Erlenmeyer于1882年 首次人工合成（根据前人对其化学性质的描述）。苯丙氨酸还证明了mRNA是遗传信息传递的方式。1961年， <em>Marshall Warren Nirenberg</em> 与 <em>J. Heinrich Matthaei</em> 在实验中, 使用mRNA将UUU（三联尿嘧啶）插入大肠杆菌的基因组, 发现所制造出来的多肽链完全由苯丙氨酸构成。Nirenberg 还因此获得了1968年的诺贝尔生理学或医学奖。</p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dMWwQ.png" srcset="/img/loading.gif" lazyload alt="Phe.png"></p>
+<h3 id="酪氨酸（Tyr、Y）"><a href="#酪氨酸（Tyr、Y）" class="headerlink" title="酪氨酸（Tyr、Y）"></a>酪氨酸（Tyr、Y）</h3><p>也是一种芳香族氨基酸, 是极性的可溶于水的。相比苯丙氨酸它多了一个羟基，这使它的性质略有不同。由德国化学家 Frederick Hopkins 首先在乳酪中发现（它还分离了色氨酸）。Tyro在希腊语中意为”奶酪”。所以得名酪氨酸</p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dMcy8.png" srcset="/img/loading.gif" lazyload alt="Tyr.png"></p>
+<h3 id="色氨酸（Trp、W）"><a href="#色氨酸（Trp、W）" class="headerlink" title="色氨酸（Trp、W）"></a>色氨酸（Trp、W）</h3><p>也是一种芳香族氨基酸，是极性的可溶于水的。它同样由德国化学家 Frederick Hopkins  在乳酪中分离, Hopkins将酪蛋白与胰蛋白酶反应时得到色氨酸。其英文名Tryptophan来自于 Trypsin（胰蛋白酶）和Phane（出现），意为在胰蛋白酶下出现的物质。这是少数名称不以-ine结尾的氨基酸</p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dQu1P.png" srcset="/img/loading.gif" lazyload alt="Trp.png"></p>
+<h3 id="天冬酰胺、谷氨酰胺（Aln-Gln、N-Q）"><a href="#天冬酰胺、谷氨酰胺（Aln-Gln、N-Q）" class="headerlink" title="天冬酰胺、谷氨酰胺（Aln - Gln、N - Q）"></a>天冬酰胺、谷氨酰胺（Aln - Gln、N - Q）</h3><p>它们是不带电的极性酰胺。天冬酰胺的名称与来源上文已经介绍。它们还有类似的对应的两种带负电的酸性氨基酸</p>
+<p><strong>谷氨酰胺</strong> 于1883年由Schuzle在甜菜汁中发现。</p>
+<p><img src="https://i.loli.net/2021/06/07/FsVEUAzlcp2bye9.png" srcset="/img/loading.gif" lazyload alt="Gln.png"></p>
+<h3 id="天冬氨酸、谷氨酸（Asp-Glu、D-E）"><a href="#天冬氨酸、谷氨酸（Asp-Glu、D-E）" class="headerlink" title="天冬氨酸、谷氨酸（Asp - Glu、D - E）"></a>天冬氨酸、谷氨酸（Asp - Glu、D - E）</h3><p>它们是带负电的酸性氨基酸, 其侧链中含有羧基（-COOH）</p>
+<p><strong>天冬氨酸</strong>由天冬氨酰提取，天冬氨酰为天冬氨酸的衍生物。</p>
+<p><img src="https://i.loli.net/2021/06/07/cUACKrn7zNWVof5.png" srcset="/img/loading.gif" lazyload alt="Asp.png"></p>
+<p><strong>谷氨酸</strong> 在1866年由德国化学家 <em>Karl Heinrich Ritthausen</em> 将面粉与硫酸加热获得。名称就来自谷物（Gluten）</p>
+<p><img src="https://i.loli.net/2021/06/07/2CK4UsQlNfOMD9k.png" srcset="/img/loading.gif" lazyload alt="Glu.png"></p>
+<p>含有谷氨酸最著名的产品当之无愧的是味精（谷氨酸钠）了。它作为一种增味剂被使用，能够使得饭菜的味道更加鲜美，而这是谷氨酸离子的作用。谷氨酸离子的这种作用最初在海带中被人发现（日本东京帝国大学的教授池田菊苗）。自然界中能够产生这种鲜味的物质还有很多。</p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dQYhn.md.png" srcset="/img/loading.gif" lazyload alt="2dQYhn.md.png"></p>
+<h3 id="丝氨酸（Ser、S）"><a href="#丝氨酸（Ser、S）" class="headerlink" title="丝氨酸（Ser、S）"></a>丝氨酸（Ser、S）</h3><p>这是一个极性的不带电的，含有羟基的亲水氨基酸。于1865年由Emil Cramer从丝蛋白中提取, Serine一名来自于拉丁文Sericum（如同英文中的Silk）故名丝氨酸</p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dMgOS.png" srcset="/img/loading.gif" lazyload alt="Ser.png"></p>
+<h3 id="苏氨酸（Thr、T）"><a href="#苏氨酸（Thr、T）" class="headerlink" title="苏氨酸（Thr、T）"></a>苏氨酸（Thr、T）</h3><p>同样的是一个极性的不带电的，含有羟基的亲水氨基酸。苏氨酸是20种常见氨基酸种最后一个被发现的。它是直接从纤维蛋白的切割产物种分离鉴定出来的，这一工作由William Cumming Rose 和 Curtis Meyer 于 1936年完成。苏氨酸因结构与 苏糖(Threose) 相似而得名。中文名由音译而得。T也是Fischer式(一种判断立体异构的表达式)的一种特殊类型。</p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dMReg.png" srcset="/img/loading.gif" lazyload alt="Thr.png"></p>
+<p>苏氨酸于其他氨基酸不同的是它具有<strong>2个手性碳原子</strong>, 因此它不仅有一对L/D构型, 而是一共有<strong>4个的同分异构体</strong>。分别为L-苏氨酸、D-苏氨酸、L-别苏氨酸、D-别苏氨酸。</p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dQyN9.md.png" srcset="/img/loading.gif" lazyload alt="2dQyN9.md.png"></p>
+<h3 id="精氨酸、赖氨酸、组氨酸（Lys-Arg-His、K-R-H）"><a href="#精氨酸、赖氨酸、组氨酸（Lys-Arg-His、K-R-H）" class="headerlink" title="精氨酸、赖氨酸、组氨酸（Lys - Arg - His、K - R - H）"></a>精氨酸、赖氨酸、组氨酸（Lys - Arg - His、K - R - H）</h3><p>它们都是带正电荷的碱性的亲水氨基酸，并且侧链都相对较大</p>
+<p><strong>精氨酸</strong> 于1886年由德国化学家 <em>Ernst Schulze</em> 和他的助手 <em>Ernst Steiger</em> 在<strong>黄羽扇豆</strong>(<em>Lupinus luteus</em>)的种子中发现的。它以希腊语中 arginoeis （意为 闪亮、银白色的）命名，同样是因为氨基酸晶体的白色。它之后又从鸟氨酸（一种在尿素代谢中出现的氨基酸）合成出了精氨酸。</p>
+<p><img src="https://i.loli.net/2021/06/07/Sk7XrOwiEto1QLU.png" srcset="/img/loading.gif" lazyload alt="Arg.png"></p>
+<p><strong>赖氨酸</strong> 于1889年由 德国生化学家 Drechsel 在牛奶中的酪蛋白中分离出来。将其命名为Lysin（之后因氨基酸惯用-ine结尾改为Lysine）</p>
+<p>赖氨酸的侧链上具有的一种特殊基团称之为胍基。</p>
+<p><img src="https://i.loli.net/2021/06/07/oTj6bnyGd92BgzD.png" srcset="/img/loading.gif" lazyload alt="Lys.png"></p>
+<p><strong>组氨酸</strong> 于 1896年由 德国药剂师 Albrecht Kossel 和 Sven Gsutaf Hedin首次分离。名称源自德语Histidin、希腊语histo（网络、组织）它也确实是大部分蛋白质的重要组成部分。而且其侧链上拥有一个咪唑基，这是一个两性基团，既能够作为酸（质子供体），也能够作为碱（质子受体），这对其性质有重要影响。</p>
+<p><img src="https://i.loli.net/2021/06/07/l916hybmS37PRKe.png" srcset="/img/loading.gif" lazyload alt="His.png"></p>
+<h3 id="胱氨酸（Cystine）"><a href="#胱氨酸（Cystine）" class="headerlink" title="胱氨酸（Cystine）"></a>胱氨酸（Cystine）</h3><p>是2分子半胱氨酸经氧化（其中的巯基）得到的一种氨基酸。在膀胱结石中被首先发现的是它，而后人们才从中分解得到半胱氨酸，半胱氨酸才是构成蛋白质一级结构的氨基酸。胱氨酸之间的-S-S键对维持蛋白质结构稳定具有重要作用，前文已叙述过了。</p>
+<p><img src="https://i.loli.net/2021/06/07/vuox4ZCHVpk3zBL.png" srcset="/img/loading.gif" lazyload alt="Cystine.png"></p>
+<h3 id="硒代半胱氨酸、吡咯赖氨酸（Sec-Pyl、U-O）"><a href="#硒代半胱氨酸、吡咯赖氨酸（Sec-Pyl、U-O）" class="headerlink" title="硒代半胱氨酸、吡咯赖氨酸（Sec - Pyl、U - O）"></a>硒代半胱氨酸、吡咯赖氨酸（Sec - Pyl、U - O）</h3><p>这两种氨基酸在第一部分已讲述过，其命名基本符合有机化合物命名标准，无特殊出处。</p>
+<p><img src="https://i.loli.net/2021/06/07/XSPyjpC8VzqDIdw.png" srcset="/img/loading.gif" lazyload alt="Sec.png"></p>
+<p><img src="https://i.loli.net/2021/06/07/OboX3if89xKCgFh.png" srcset="/img/loading.gif" lazyload alt="Pyl.png"></p>
+<h3 id="鸟氨酸、瓜氨酸（Ornithine、Citrulline）"><a href="#鸟氨酸、瓜氨酸（Ornithine、Citrulline）" class="headerlink" title="鸟氨酸、瓜氨酸（Ornithine、Citrulline）"></a>鸟氨酸、瓜氨酸（Ornithine、Citrulline）</h3><p>它们两者一样都不为DNA编码, 不会涉及蛋白质的生物合成. 但是鸟氨酸是精氨酸(Arg)生物合成的重要中介物。而它们两者都参与了尿素循环，这是生物排除多余的氮的重要途径。所以它们也对生命活动起关键作用。瓜氨酸首先在西瓜中被发现得名。</p>
+<p><img src="https://z3.ax1x.com/2021/06/07/2dQWjK.png" srcset="/img/loading.gif" lazyload alt="2dQWjK.png"></p>
+<h2 id="（三）各种氨基酸性质的意义"><a href="#（三）各种氨基酸性质的意义" class="headerlink" title="（三）各种氨基酸性质的意义"></a>（三）各种氨基酸性质的意义</h2><p>通过对蛋白质的研究，人们知道了蛋白质的生物功能基础是其特殊的空间结构（即构象），而从一级结构开始，层层往上的各种结构的确定，都是由在各种氨基酸的性质影响下物质构造最稳定（内能最低）所决定出现的空间构型，细胞内的分子通过不断改变自己的构象使得自己的能量趋于最低、最稳定而形成最终的空间结构。所以说，<strong>蛋白质的三维结构是由氨基酸的排列顺序所规定的</strong>。而氨基酸的排列顺序通过相互组合表现出的性质完成了这一过程，并且这一过程在细胞中还有各种酶的催化（如Pro生成顺式肽键）。</p>
+<h2 id="（四）参考文献"><a href="#（四）参考文献" class="headerlink" title="（四）参考文献"></a>（四）参考文献</h2><ol>
+<li>生物化学 第4版（上）·朱圣庚、徐长法</li>
+<li>Vickery HB, Schmidt CL (1931). “The history of the discovery of the amino acids”. </li>
+<li>Plimmer, R.H.A. (1912) [1908]. Plimmer, R.H.A.; Hopkins, F.G. (eds.). The chemical composition of the proteins. Monographs on biochemistry. Part I. Analysis (2nd ed.).</li>
+<li>Hopkins FG, Cole SW (December 1901). “A contribution to the chemistry of proteids: Part I. A preliminary study of a hitherto undescribed product of tryptic digestion”. The Journal of Physiology.</li>
+<li>Berzelius, Jacob (1848). Jahres-Bericht über die Fortschritte der Chemie und Mineralogie (Annual Report on the Progress of Chemistry and Mineralogy). vol. 47. Tübigen, (Germany)</li>
+<li>Jones, J. H., ed. (1985). Amino Acids, Peptides and Proteins. </li>
+<li>Vauquelin LN, Robiquet PJ (1806). “La découverte d’un nouveau principe végétal dans le suc des asperges”. <em>Annales de Chimie</em> (in French)</li>
+</ol>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%9D%82%E8%B0%88/">杂谈</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/05/22/%E8%B5%84%E6%96%99%E5%AD%98%E6%A1%A3-%E5%9C%B0%E7%90%83%E5%A4%A9%E7%A9%BA%E2%80%94Bedwars%E6%A8%A1%E5%BC%8F%E8%AE%BE%E7%BD%AE%E6%B5%81%E7%A8%8B/">
+                        <span class="hidden-mobile">[资料存档]地球天空—Bedwars模式设置流程</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#gitalk-container', function() {
+      Fluid.utils.createCssLink('/css/gitalk.css')
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js', function() {
+        var options = Object.assign(
+          {"clientID":"f19b461a0235c4998c87","clientSecret":"8c60591b92576a4194fe5a0193811441516e0a7d","repo":"kariakidec.github.io","owner":"KariakiDec","admin":["KariakiDec"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":false,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {
+            id: '2bc7795cd4237ec238eb28d26cc10a06'
+          }
+        )
+        var gitalk = new Gitalk(options);
+        gitalk.render('gitalk-container');
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     Copyright © 2021 Kariaki.Dec <br>  Powered by  <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      jQuery('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      jQuery('#modalSearch').on('shown.bs.modal', function() {
+        jQuery('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
