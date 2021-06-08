@@ -1,0 +1,971 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;light&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#40E0D0">
+  <meta name="description" content="某摸鱼老年人的休闲咖啡厅">
+  <meta name="author" content="Kariaki">
+  <meta name="keywords" content="">
+  
+  <title>摸鱼Mod列表 - The Polaris</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"kariaki.moe","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>The Polaris 休息站</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/sky.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="摸鱼Mod列表">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-06-08 22:32" pubdate>
+        2021年6月8日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      4.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      77
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">摸鱼Mod列表</h1>
+            
+            <div class="markdown-body">
+              <h2 id="MOD-list"><a href="#MOD-list" class="headerlink" title="MOD list"></a>MOD list</h2><p>📜 <strong>MODS:</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/biome-makeover">Biome Makeover (by Lemonszz)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/more-shields">More Shields! (by px01tv)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/chat-heads">Chat Heads (by dzwdz)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/screenshot-to-clipboard-fabric">Screenshot to Clipboard (Fabric) (by comp500)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/kiln-fabric">Kiln (Fabric) (by LemmaEOF)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/economical-villager-trading">Economical Villager Trading (by muteone2)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/campanion">Campanion (by wyn_price)</a></li>
+<li>[Heartbond <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/heartbond-fabric">FABRIC] (by Apace100)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/sodium">Sodium (by jellysquid_)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/trinkets-fabric">Trinkets (Fabric) (by EmilyPloszaj)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/map-atlases">Map Atlases (by Pepperoni__Jabroni__)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/texture-packs/justtimms-vanilla-additions-dark-gui-add-on">JustTimm’s Vanilla Additions Dark GUI Add-On (by justtimmnl)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/cinderscapes">Cinderscapes (by Vaerian1)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/betternether">BetterNether (by paulevs)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/oh-how-the-crafting-has-tabled">Oh, How the Crafting Has Tabled! (by P3NG00)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/upgraded-ender-chests">Upgraded Ender Chests (by Kyrptonaught)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/herdspanic">HerdsPanic (by Globox_Z)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/comforts-fabric">Comforts (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/betterend">BetterEnd (by paulevs)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/crimson-moon">Crimson Moon (by Draylar1)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat">Simple Voice Chat (by henkelmax)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/enchantment-lore">Enchantment Lore (by muteone2)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/colytra-fabric">Colytra (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/sodium-extra">Sodium Extra (by FlashyReese)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/ok-zoomer">Ok Zoomer (by boredomh1)</a></li>
+<li>[Greater Eye of Ender <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/greater-eye-of-ender-fabric">FABRIC] (by kwpugh)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/architectury-fabric">Architectury API (Fabric) (by shedaniel)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fabric-discord-link">Fabric-Discord Link (by the_cat_core)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/architectury-forge">Architectury API (Forge) (by shedaniel)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/dynamic-fps">Dynamic FPS (by juliand665)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/perspective-mod-redux">Perspective Mod Redux (by Cynosphere)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/yosbr">Your Options Shall Be Respected (YOSBR) (by shedaniel)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/upgraded-shulkers">Upgraded Shulkers (by Kyrptonaught)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fabrication">Fabrication (by unascribed)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/carrier">Carrier (by GabrielHOlv)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/yungs-api-fabric">YUNG’s API (Fabric) (by YUNGNICKYOUNG)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/lambdabettergrass">LambdaBetterGrass (by LambdAurora)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/twitch-chat">Twitch Chat Bridge (Fabric) (by Pablopr3)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/better-sodium-video-settings-button">Better Sodium Video Settings Button (by LimeShulkerBox)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/all-stone-to-tools">All Stone to Tools (by swordofblaze1)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/lithium">Lithium (Fabric) (by jellysquid_)</a></li>
+<li>[GeckoLib <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/geckolib-fabric">FABRIC] (by ThanosGecko)</a></li>
+<li>[Easy Emerald Tools &amp; More <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/simple-emerald-tools-fabric">FABRIC] (by kwpugh)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/vein-mining-fabric">Vein Mining (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/falling-leaves-fabric">Falling Leaves (Fabric) (by RandomMcSomethin)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/globalspawn">GlobalSpawn (by DaFuqsy)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/flamingo-oh-oh-oh">Flamingo, oh, oh, oh… (by sakiraart)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fpsdisplay">FPS - Display (by Gray_ray)</a></li>
+<li>[Simple Backpack <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/simple-backpack-fabric">FABRIC] (by kwpugh)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/wolves-with-armor">Wolves With Armor (by Draylar1)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/dark-loading-screen">Dark Loading Screen (by Neecko5b84)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/bookshelving">Bookshelving (by P3NG00)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/dynamic-music">Dynamic Music (by LudoCrypt)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/more-curios-totems-of-undying">More Curios Totems of Undying (by AzureDoomC)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/save-my-stronghold-fabric">Save My Stronghold! (Fabric) (by YUNGNICKYOUNG)</a></li>
+<li>[<a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/monster-of-the-ocean-depths-fabric">FABRIC] Monster Of The Ocean Depths (by dinohunter0727)</a></li>
+<li>[Vanilla Foods Enhanced <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/vanilla-foods-enhanced-fabric">FABRIC] (by justpepss)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/simplex-terrain-generation">Simplex Terrain Generation (by SuperCoder79)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/gentle-fawn">Gentle Fawn (by sakiraart)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/rare-ice">Rare Ice (Forge/Fabric) (by shedaniel)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/texture-packs/stay-true">Stay True (by backto4myula)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/skinned-lanterns-fabric">Skinned Lanterns (Fabric) (by nuxthefox)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights">LambDynamicLights (by LambdAurora)</a></li>
+<li>[Door(s) Coupling <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/couplings-for-fabric-updated">FABRIC] (by xxx_inaksis_xxx)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/reroll">Reroll (by Draylar1)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/caelus-fabric">Caelus API (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fabric-waystones">Fabric Waystones (by LordDeatHunter)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/broken-name-tags">Broken Name Tags (by bluefire_phoenix)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/phosphor">Phosphor (Fabric) (by jellysquid_)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/dragonloot">DragonLoot (by pois1xlive)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/celib">Celib (FABRIC) (by cebbys_dev)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/illuminations">Illuminations 🔥 (by doctor4t)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/better-dropped-items">Better Dropped Items (by Draylar1)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/xp-storage">XP Storage (by sfinc)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/go-fish">Go Fish (by Draylar1)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/modmenu">Mod Menu (by ProspectorDev)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/cave-biomes">Cave Biomes (by SuperCoder79)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/trade">Trade (Fabric) (by thesilentum)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/rpgz">RpgZ (by Globox_Z)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/edit-sign">Edit Sign (by RakSrinaNa)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/curious-elytra-fabric">Curious Elytra (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/aether">The Aether Reborn (by ImmortalDevs)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/randompatches-fabric">RandomPatches (Fabric) (by TheRandomLabs)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/gilded-netherite">Gilded Netherite (by sakiraart)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/home-camp">Home Camp (by The_Fireplace)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/quartz-elevator">Quartz Elevator (by atonkish)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/auto-config-updated-api">Auto Config Updated API (by shedaniel)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/stuffz">StuffZ (by Globox_Z)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/adventurez">AdventureZ (by Globox_Z)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/animal-feeding-trough">Animal Feeding Trough (by Slexom)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters">Dynamic Sound Filters (by andre111_)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items">Roughly Enough Items Fabric (REI) (by shedaniel)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/monsters-in-the-closet">Monsters in the Closet (by Minenash)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/roughly-enough-resources">Roughly Enough Resources (by theorbagain)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/invisible-frames">Invisible Frames (by sfort__)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/better-enchanted-books">Better Enchanted Books (Fabric) (by Bernasss12)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/pling">Pling (by haykam)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/terrestria">Terrestria (by coderbot)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/mooblooms">Mooblooms (by YanisBft)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/not-enough-crashes">Not Enough Crashes (Fabric) (by NatanFudge)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves-fabric">YUNG’s Better Caves (Fabric) (by YUNGNICKYOUNG)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/debrand">Debrand (by haykam)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/advanced-nbt-tooltips">Advanced NBT Tooltips (by B0IIZZZ)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/patchouli-fabric">Patchouli (Fabric) (by williewillus)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fabrishot">Fabrishot (by ramidzkh)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/cherished-worlds-fabric">Cherished Worlds (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/wild-world">Wild World (by andre111_)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/desolation">Desolation (Fabric) (by raltsmc)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/biome-picker">Biome Picker (by cominixo)</a></li>
+<li>[FancyMenu <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fancymenu-fabric">Fabric] (by Keksuccino)</a></li>
+<li>[Konkrete <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/konkrete-fabric">Fabric] (by Keksuccino)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/flytrelib">FlytreLib (by Flytre7)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin">Fabric Language Kotlin (by modmuss50)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/advancements-enlarger">Advancements Enlarger (by shedaniel)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/simple-discord-rpc">Simple Discord RPC (by hypherionsa)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-fabric">YUNG’s Better Mineshafts (Fabric) (by YUNGNICKYOUNG)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/portal-tags">Portal Tags (by cool_mineman)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/beholders-variations-fabric">Beholder’s Variations Fabric (by wondering_oracle)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/traverse">Traverse (by ProspectorDev)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/beaconoverhaul">Beacon Overhaul (by HeckinChloe)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge">Inventory HUD+ (by dmitrylovin)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/bedspreads-fabric">Bedspreads (Fabric) (by TheIllusiveC4)</a></li>
+<li>[Mob proof crystals <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/mob-proof-crystals">Fabric] (by Juarrin)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/more-totems-of-undying">More Totems Of Undying (by cyborg_pigeon)</a></li>
+<li>[Croptopia <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/croptopia-fabric">FABRIC/FORGE] (by thethonk)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/complete-bone-meal">Complete Bone Meal (by Pepperoni__Jabroni__)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/polymorph-fabric">Polymorph (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/curios-fabric">Curios API (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/on-soul-fire">On Soul Fire (by MoriyaShiine)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/glimmering-potions">Glimmering Potions (by Draylar1)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/keybind-search">Keybind Search (by Flytre7)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/blur-fabric">Blur (Fabric) (by Motschen)</a></li>
+<li>[<a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/knowyourknot-enderporter">Fabric] Enderporter (by knowyourknot)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/jumploader">Jumploader (by comp500)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/cloth-config">Cloth Config API (Fabric) (by shedaniel)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/chillager">Chillager (by Duke_Leto2)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fabric-seasons">Fabric Seasons (by D4rkness_King)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/mcpnp">MC Plug-n-Play (by glitchieplays)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/repurposed-structures-fabric">Repurposed Structures (Fabric) (by telepathicgrunt)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/strange-berries">Strange Berries (by System0ne)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/biome-locator">Biome Locator (by Flytre7)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/earth2java-fabric">Earth2Java (by Slexom)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">Fabric API (by modmuss50)</a></li>
+<li>[Oh The Biomes You’ll Go <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric">FABRIC] (by AOCAWOL)</a></li>
+<li>[<a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/fat-experience-orbs">Fabric] Fat Experience Orbs (by NinjaPhenix)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/smooth-boot">Smooth Boot (Fabric) (by UltimateBoomer)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/backslot">BackSlot (by Globox_Z)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/dual-riders">Dual Riders (by Flytre7)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/falling-tree">FallingTree (by RakSrinaNa)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/consistency">Consistency+ (by IMS21)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/curio-of-undying-fabric">Curio of Undying (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/mod-credits">Mod Credits (by haykam)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/cake-chomps-fabric">Cake Chomps (Fabric) (by TheIllusiveC4)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/more-respawn-anchors">More Respawn Anchors (by cominixo)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/grass-pass">Grass Bypass (by Flytre7)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/wandering-collector">Wandering Collector (by Siphalor)</a></li>
+</ul>
+<h3 id="Biome-Makeover"><a href="#Biome-Makeover" class="headerlink" title="Biome Makeover"></a>Biome Makeover</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av802828242">【Minecraft 1.16.5】绝妙生态模组，原版生物群系大翻新，更多植物、建筑、生物以及更多玩法_哔哩哔哩_bilibili</a></p>
+<h3 id="More-Shields"><a href="#More-Shields" class="headerlink" title="More Shields!"></a>More Shields!</h3><p>更多盾牌</p>
+<h3 id="Chat-Head"><a href="#Chat-Head" class="headerlink" title="Chat Head"></a>Chat Head</h3><p> 不废话，上图</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEBfd48b1a5c2e0dec609c31310ccd4f095?method=download&shareKey=b04585fdf6a1d8ca6461e28858f57d00" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Screenshot-to-Clipboard"><a href="#Screenshot-to-Clipboard" class="headerlink" title="Screenshot to Clipboard"></a>Screenshot to Clipboard</h3><p>截图后图片自动进入剪贴板</p>
+<h3 id="Kiln"><a href="#Kiln" class="headerlink" title="Kiln"></a>Kiln</h3><p>加入更多熔炉</p>
+<ul>
+<li>Brick from clay ball</li>
+<li>Charcoal from logs that burn</li>
+<li>Cracked nether brick from nether brick</li>
+<li>Cracked stone brick from stone brick</li>
+<li>Glass from sand</li>
+<li>Glazed terracotta from dyed terracotta</li>
+<li>Green dye from cactus</li>
+<li>Lime dye from sea pickle</li>
+<li>Nether brick from netherrack</li>
+<li>Popped chorus fruit from chorus fruit</li>
+<li>Smooth quartz from quartz block</li>
+<li>Smooth red sandstone from red sandstone</li>
+<li>Smooth sandstone from sandstone</li>
+<li>Smooth stone from stone</li>
+<li>Sponge from wet sponge</li>
+<li>Stone from cobblestone</li>
+<li>Terracotta from clay</li>
+</ul>
+<h3 id="Economical-Villager-Trading"><a href="#Economical-Villager-Trading" class="headerlink" title="Economical Villager Trading"></a>Economical Villager Trading</h3><p>修改村民交易机制</p>
+<p>This mod replaces vanilla’s villager restocking mechanic. Villagers will no longer be limited to a few restocks a day.</p>
+<p>Instead, every time you lock out a villager trade, if the newly locked trade was a buy trade, the villager will restock all of their sell trades. Likewise, if the newly locked trade was a sell trade, the villager will restock all of their buy trades. </p>
+<p>A sell trade is any trade that gives the player emeralds. All other trades are buy trades. </p>
+<p>In addition, every time the villager levels up, or if all of a villager’s trades ever become locked out, they will restock all of their trades. This is to ensure a villager will never be stuck in a state where you can’t trade with them at all. </p>
+<p>The rational for this mod is that it eliminates the need for having lots of villagers with the same trades, and as a result should reduce lag. Villagers are fairly laggy, so having lots of them can greatly affect performance. </p>
+<h3 id="Campanion"><a href="#Campanion" class="headerlink" title="Campanion"></a>Campanion</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB4a0d51aa103165be18202b2c4f8e258c?method=download&shareKey=79c9818204ab5e1e590da99d673eeb27" srcset="/img/loading.gif" lazyload alt="campanion_banner"></p>
+<h3 id="Heartbond"><a href="#Heartbond" class="headerlink" title="Heartbond"></a>Heartbond</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB3a6e17deaa7a9ff4710ebb00bbaeed57?method=download&shareKey=60d349ed4c5960a478058a6f3b75c3cd" srcset="/img/loading.gif" lazyload alt="EnderHeart"> <strong>Ender Heart</strong></p>
+<p>Craft an Ender Heart by surrounding a Nether Star with 4 Ender Pearls in a crafting table. Ender Hearts are equippable items (they have their own Curios slot!) and can be linked to one another.</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEBc8c8484b025852ad363918ce74868952?method=download&shareKey=418e0646745d504281c29fa5f5c25195" srcset="/img/loading.gif" lazyload alt="EnderSoul"> <strong>Ender Soul</strong></p>
+<p>By combining two Ender Hearts with soul sand or soul soil, you create an Ender Soul which links the two hearts together. Using this technique, a single Ender Heart can be linked to as many other Ender Hearts as you want, and as many times as you want.</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB5d666db6d9520ebc03bc5348dafc9f04?method=download&shareKey=0e7516d0c854ae22bd52ae2e29c1cfb6" srcset="/img/loading.gif" lazyload alt="img"> <strong>Teleportation</strong></p>
+<p>By using an Ender Soul (right-click while holding it) and wearing one of the Ender Hearts used to create it, you are able to teleport to the player wearing the other Ender Heart that was used to create the soul. This teleportation does not work across dimensions.</p>
+<h3 id="Sodium"><a href="#Sodium" class="headerlink" title="Sodium"></a>Sodium</h3><p>优化</p>
+<h3 id="Trinkets"><a href="#Trinkets" class="headerlink" title="Trinkets"></a>Trinkets</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7deac461e949c48311deaa4aaf4676b4?method=download&shareKey=28aeeee461401d8d2e25b35ff36e8d06" srcset="/img/loading.gif" lazyload alt="An example of the Trinkets UI"></p>
+<h3 id="Map-Atlases"><a href="#Map-Atlases" class="headerlink" title="Map Atlases"></a>Map Atlases</h3><p>更好的地图</p>
+<h3 id="Dark-GUI-AddOn"><a href="#Dark-GUI-AddOn" class="headerlink" title="Dark GUI AddOn"></a>Dark GUI AddOn</h3><p>GUI Dark</p>
+<h3 id="Cinderscapes"><a href="#Cinderscapes" class="headerlink" title="Cinderscapes"></a>Cinderscapes</h3><p>群系增加</p>
+<p><strong>Biomes:</strong></p>
+<ul>
+<li>Ashy Shoals</li>
+<li>Blackstone Shales</li>
+<li>Luminous Grove</li>
+<li>Quartz Canyon</li>
+</ul>
+<h3 id="BetterNether"><a href="#BetterNether" class="headerlink" title="BetterNether"></a>BetterNether</h3><p>更好的地狱</p>
+<h3 id="Oh-How-the-Crafting-Has-Tabled"><a href="#Oh-How-the-Crafting-Has-Tabled" class="headerlink" title="Oh, How the Crafting Has Tabled!"></a>Oh, How the Crafting Has Tabled!</h3><p>不同木板材质合成台</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB60218098097f58e90ed91de6ddfd2967?method=download&shareKey=1751b59efd4f7cc78bbed004100d62ec" srcset="/img/loading.gif" lazyload alt="All Crafting Tables"></p>
+<h3 id="Upgraded-Ender-Chests"><a href="#Upgraded-Ender-Chests" class="headerlink" title="Upgraded Ender Chests"></a>Upgraded Ender Chests</h3><p>末影箱增强</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB2739061caa49c731e2534c9b375e4f04?method=download&shareKey=261870c08a5cb620f8ad34f6c2f34fc6" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p> The Spatial Chest(Right) is a bigger ender chest with double the capacity. The first half of the chest will be your normal e chest inventory, with an additional 27 slots.</p>
+<p>The Rift Chest(Left), once placed will be locked to the e chest inventory of the player who placed it. Any player or hopper/pipe who attempts to access this chest will access the ender chest inventory of the player who placed it, as long as they are currently online. Requiring the player to be online helps to prevent stealing, at least the player is online to have a chance to defend. (The player being online also helps to make sure the changed inventory gets saved to prevent dupes. Saves me from having to write custom saving/loading)</p>
+<h3 id="HerdsPanic"><a href="#HerdsPanic" class="headerlink" title="HerdsPanic"></a>HerdsPanic</h3><p>动物恐慌</p>
+<p><img src="https://s2.gifyu.com/images/cow_panic.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Comforts"><a href="#Comforts" class="headerlink" title="Comforts"></a>Comforts</h3><p>睡袋与吊床</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB4e75176acb9a1c6455bf80467ff358e8?method=download&shareKey=0825a34033826bbd929d5a4d652236e9" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB8e4157070d7081b6ac92303f36c08805?method=download&shareKey=86ba494ab588a3c8648c1420eab3abfd" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="BetterEnd"><a href="#BetterEnd" class="headerlink" title="BetterEnd"></a>BetterEnd</h3><p>更好的末地</p>
+<h3 id="Crimson-Moon"><a href="#Crimson-Moon" class="headerlink" title="Crimson Moon"></a>Crimson Moon</h3><p>血月</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB31485b1d0506ac9a6a913ff8931254bb?method=download&shareKey=c884db3d0d09378f6cb43a830e5c0f57" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Simple-Voice-Chat"><a href="#Simple-Voice-Chat" class="headerlink" title="Simple Voice Chat"></a>Simple Voice Chat</h3><p>游戏内语音</p>
+<h3 id="Enchantment-Lore"><a href="#Enchantment-Lore" class="headerlink" title="Enchantment Lore"></a>Enchantment Lore</h3><p>附魔书可翻阅</p>
+<h3 id="Colytra"><a href="#Colytra" class="headerlink" title="Colytra"></a>Colytra</h3><p>鞘翅附着</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB0cf2634eb59ce90ef1a52127626248a2?method=download&shareKey=d2d9151dce99e43846d991f0a9e2cda5" srcset="/img/loading.gif" lazyload alt="Colytra screenshot"></p>
+<h3 id="Ok-Zoomer"><a href="#Ok-Zoomer" class="headerlink" title="Ok Zoomer"></a>Ok Zoomer</h3><p>各种视角</p>
+<h3 id="Greater-Eye-of-Ender"><a href="#Greater-Eye-of-Ender" class="headerlink" title="Greater Eye of Ender"></a>Greater Eye of Ender</h3><p>更好的末影之眼（找要塞）</p>
+<h3 id="Perspective-Mod-Redux"><a href="#Perspective-Mod-Redux" class="headerlink" title="Perspective Mod Redux"></a>Perspective Mod Redux</h3><p>360 度 第三人称</p>
+<h3 id="Upgraded-Shulkers"><a href="#Upgraded-Shulkers" class="headerlink" title="Upgraded Shulkers"></a>Upgraded Shulkers</h3><p>更好的潜影箱</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB0bb9559fb06d4039940c1704f4c041cc?method=download&shareKey=76dc7c2166d3ecde0e5490c5a4cc1a48" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Fabrication"><a href="#Fabrication" class="headerlink" title="Fabrication"></a>Fabrication</h3><p>原版增强</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.adventure_tags_in_survival">Adventure Tags In Survival</a> - Makes CanDestroy/CanPlaceOn work in Survival</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.better_pause_freezing">Better Pause Freezing</a> - Makes textures not tick while the game is paused</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.boundless_levels">Boundless Levels</a> - Fixes enchantment.level.27</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.colored_crack_particles">Colored Crack Particles</a> - Makes “crack” particles honor item coloration, such as leather armor dye</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.furnace_minecart_pushing">Furnace Minecart Pushing</a> - Right-clicking a furnace minecart pushes it; silently removed around 17w46a</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.ghast_charging">Ghast Charging</a> - Brings back the ghast “charging” animation that broke in 1.3</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.inanimates_can_be_invisible">Inanimates Can Be Invisible</a> - Makes inanimate entities honor the “invisible” tag sent by the server</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.multiline_sign_paste">Multiline Sign Paste</a> - Allows pasting multiple lines of text into a sign</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.no_night_vision_flash">No Night Vision Flashing</a> - Disables the flashing effect when Night Vision is about to run out</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.omniscent_player">Omniscent Player</a> - The player render in the inventory always follows your cursor</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.silverfish_step">Silverfish Step</a> - Fixes an oversight that prevents silverfish from playing their step sound</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.stable_cacti">Stable Cacti</a> - Makes cacti less afraid</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.sync_attacker_yaw">Sync Attacker Yaw</a> - Correctly sync the last attacker yaw for damage tilt; fixes MC-26678</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.uncap_menu_fps">Uncap Menu FPS</a> - Removes the hardcoded 60 FPS cap in menu screens</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23fixes.use_player_list_name_in_tag">Use Player List Name In Tag</a> - Changes player name tags to match names in the player list</li>
+</ul>
+<p><strong>Utility</strong> - Useful tidbits that don’t modify gameplay</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.books_show_enchants">Books Show Enchants</a> - Enchanted books show the first letter of their enchant</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.canhit">CanHit</a> - A CanHit tag for weapons in the same vein as CanDestroy/CanPlaceOn</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.despawning_items_blink">Despawning Items Blink</a> - Makes items that are about to despawn blink</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.hide_armor">Hide Armor</a> - Adds /hidearmor and /showarmor commands to hide and show your armor</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.i_and_more">/i And More</a> - Adds /i, /item, /more, and /fenchant commands</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.item_despawn">Item Despawn Control</a> - Allows fine-grained control over item despawn times</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.killmessage">KillMessage</a> - Allows customizing kill messages for summoned entities and spawned items</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.legacy_command_syntax">Legacy Command Syntax</a> - Brings back various kinds of old command syntax; old habits die hard</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.mob_ids">Mob IDs</a> - Makes entities show their entity ID as a nametag in Creative when F3 is up</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.mods_command">/mods Command</a> - Adds a /mods command in the same vein as Bukkit’s /plugins</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.taggable_players">Taggable Players</a> - Allows assigning various “tags” to players, such as no_hunger or invisible_to_mobs</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.toggle_stance">Toggle Stance</a> - Adds a “Toggle Stance” keybind to switch between standing and sneaking</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.tools_show_important_enchant">Tools Show Important Enchant</a> - Tools show the first letter of their “important” enchant</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23utility.yeet_recipes">Yeet Recipes</a> - Adds a yeet_recipes.ini that can be used to completely hide any recipe</li>
+</ul>
+<p><strong>Tweaks</strong> - Minor changes that fit with vanilla</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.alt_absorption_sound">Alt Absorption Sound</a> - *<strong>New in v1.3.4*</strong> Taking damage that is completely absorbed by Absorption plays a different (custom) sound</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.arrows_work_in_water">Arrows Work In Water</a> - Reduces arrow drag in water by a fair bit to make bows useful underwater</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.bush_walk_doesnt_hurt_with_armor">Bush Walk Doesn’t Hurt With Armor</a> - Walking through berry bushes with both legging and boots equipped doesn’t hurt</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.cactus_brush_doesnt_hurt_with_chest">Cactus Brush Doesn’t Hurt With Chest</a> - Touching the side of a cactus with a chestplate on doesn’t hurt</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.cactus_walk_doesnt_hurt_with_boots">Cactus Walk Doesn’t Hurt With Boots</a> - Walking on top of a cactus with boots on doesn’t hurt</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.campfires_place_unlit">Campfires Place Unlit</a> - Campfires are unlit when placed and must be lit with a Flint and Steel</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.cracking_spawn_eggs">Cracking Spawn Eggs</a> - Spawn eggs spawn cracking particles and play a sound when used</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.creepers_explode_when_on_fire">Creepers Explode When On Fire</a> - Causes creepers to light their fuses when lit on fire</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.feather_falling_no_trample">Feather Falling No Trample</a> - Farmland will not get trampled when wearing feather falling</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.flammable_cobwebs">Flammable Cobwebs</a> - Cobwebs can burn</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.fullres_banner_shields">Fullres Banner Shields</a> - Makes shields use the full-res banner patterns instead of weird smaller versions</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.ghast_panic">Ghast Panic</a> - Makes ghasts randomly play the unused “scream” sound when outside of the Nether</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.legible_signs">Legible Signs</a> - Adjusts sign text colors to be less garbage</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.less_annoying_fire">Less Annoying Fire</a> - Shortens the fire overlay and hides it when you have Fire Resistance</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.less_restrictive_note_blocks">Less Restrictive Note Blocks</a> - Makes note blocks work with blocks above them</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.long_levelup_sound_at_30">Long Level Up Sound At 30</a> - Plays the old longer level up sound when you reach level 30</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.nether_cauldron">Nether Cauldron</a> - Water evaporates when being placed inside a cauldron in the nether</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.no_dinnerlava">No Dinnerlava</a> - Disables the generation of 1 block hidden lava pockets in the Nether</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.no_sneak_bypass">No Sneak Bypass</a> - Blocks which would normally not affect players when sneaking will</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.normal_fog_with_night_vision">Normal Fog With Night Vision</a> - Disables the fog brightening effect with Night Vision</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.play_note_blocks_in_creative">Play Note Blocks In Creative</a> - Allows sneaking when punching note blocks to play them in Creative mode</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.rainbow_experience">Rainbow Experience</a> - Makes experience random colors instead of just lime green</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.reverse_note_block_tuning">Reverse Note Block Tuning</a> - Sneaking while tuning a note block reduces its pitch rather than increases</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.shulker_bullets_despawn_on_death">Shulker Bullets Despawn On Death</a> - Makes shulker bullets despawn when the shulker that shot them is killed</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.silent_minecarts">Silent Minecarts</a> - <strong>New in v1.3.3</strong> Makes minecarts not make noise</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23tweaks.tridents_in_void_return">Tridents In Void Return</a> - Loyalty tridents return when falling into the Void</li>
+</ul>
+<p><strong>Minor Mechanics</strong> - Small additions to vanilla mechanics</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.crawling">Crawling</a> - Adds a key to explicitly enter the “crawling” stance</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.exact_note_block_tuning">Exact Note Block Tuning</a> - Right-clicking a note block with a stack of sticks sets its pitch to the size of the stack minus one</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.feather_falling_five">Feather Falling V</a> - Makes Feather Falling V a valid enchant that completely negates fall damage</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.feather_falling_five_damages_boots">Feather Falling V Damages Boots</a> - Makes absorbing fall damage with Feather Falling V cause damage to the boots</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.fire_aspect_is_flint_and_steel">Fire Aspect Is Flint And Steel</a> - Makes Fire Aspect tools act like Flint and Steel</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.fire_protection_on_any_item">Fire Protection On Any Item</a> - Fire Protection can be applied to any enchantable item, and makes the item immune to fire and lava damage</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.furnace_minecart_any_fuel">Furnace Minecart Accepts Any Fuel</a> - Allows furnace minecarts to accept any furnace fuel, rather than just coal and charcoal</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.infibows">InfiBows</a> - Makes Infinity bows not require an arrow in your inventory to fire</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.invisibility_splash_on_inanimates">Invisibility Splash On Inanimates</a> - Invisibility splash potions affect inanimates (minecarts, arrows, etc) making them invisible</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.mechanism_muffling">Mechanism Muffling</a> - Placing a block of wool adjacent to a dispenser, dropper, or piston makes it silent</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.note_block_notes">Note Block Notes</a> - Tells you the note the note block has been tuned to when tuning it or playing it manually above your hotbar</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.note_blocks_play_on_landing">Note Blocks Play On Landing</a> - Makes note blocks play when landed on</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.observers_see_entities">Observers See Entities</a> - Observers detect when entities move in front of them if they have no block in front of them</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.observers_see_entities_living_only">Observers See Entities - Living Only</a> - Observers only detect living entities, and not e.g. item entities</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.spiders_cant_climb_glazed_terracotta">Spiders Can’t Climb Glazed Terracotta</a> - Makes spiders unable to climb glazed terracotta</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.spiders_cant_climb_while_wet">Spiders Can’t Climb While Wet</a> - Makes spiders unable to climb while wet</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23minor_mechanics.water_fills_on_break">Water Fills On Break</a> - Water source blocks fill in broken blocks instead of air under some conditions</li>
+</ul>
+<p><strong>Mechanics</strong> - New mechanics and powerful additions</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23mechanics.anvil_repair">Anvil Repair</a> - Allows right-clicking on an anvil with a Block of Iron to repair it one stage</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23mechanics.bottled_air">Bottled Air</a> - <strong>New in v1.3.3</strong> Filling a glass bottle underwater refills 1 air bubble</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23mechanics.broken_tools_drop_components">Broken Gear Drops Components</a> - Makes gear drop its consituent items when broken</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23mechanics.enhanced_moistness">Enhanced Moistness</a> - Entities are considered “wet” for 5 seconds after leaving a source of wetness</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23mechanics.grindstone_disenchanting">Grindstone Disenchanting</a> - Placing a book in the bottom slot of a Grindstone when disenchanting an item will transfer the enchantments onto the book</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23mechanics.obsidian_tears">Obsidian Tears</a> - Lets you set your spawn at a Crying Obsidian block; automatable</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23mechanics.pursurvers">Pursurvers</a> - Adds “Pursurvers”, observers with a Purpur block next to them, that can detect left-clicks on their watched block</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23mechanics.slowfall_splash_on_inanimates">Slow Fall Splash On Inanimates</a> - Slow fall splash potions affect inanimates (minecarts, arrows, etc) making them unaffected by gravity</li>
+</ul>
+<p><strong>Balance</strong> - Changes to vanilla balance</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.anvil_damage_only_on_fall">Anvils Take Damage Only When Falling</a> - Anvils only take damage when falling from a height rather than randomly after being used</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.anvil_rename_always_costs_one">Anvil Rename Always Costs One</a> - Makes renaming an item on an anvil always cost one level</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.bedrock_impaling">Bedrock-Like Impaling</a> - Makes the Impaling enchantment act like it does in Bedrock Edition and Combat Test 4</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.disable_prior_work_penalty">Disable Prior Work Penalty</a> - Disables the anvil prior work penalty when an item has been worked multiple times</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.drop_more_exp_on_death">Drop More Experience On Death</a> - Players drop 80% of their experience when dying instead of basically nothing</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.environmentally_friendly_creepers">Environmentally Friendly Creepers</a> - Creeper explosions deal entity damage, but not block damage, even if mobGriefing is true</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.faster_obsidian">Faster Obsidian</a> - Makes obsidian and obsidian-related blocks break 3× faster</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.food_always_edible">Food Always Edible</a> - Allows players to eat unconditionally</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.hyperspeed_furnace_minecart">Hyperspeed Furnace Minecart</a> - Makes furnace minecarts very fast and burn fuel more quickly</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.infinity_crossbows">Infinity Crossbows</a> - Allow putting Infinity on crossbows</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.infinity_mending">Infinity &amp; Mending</a> - Makes Mending and Infinity compatible enchantments</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.loading_furnace_minecart">ChunkLoading Furnace Minecart</a> - *<strong>New in v1.3.4*</strong> Makes furnace minecarts load chunks if they have fuel</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.soul_speed_doesnt_damage_boots">Soul Speed Doesn’t Damage Boots</a> - Makes running on soul blocks with Soul Speed not deal damage to your boots</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.spawners_always_tick">Spawners Always Tick</a> - Spawners always count down their spawn timers, even if no player is nearby</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.tridents_accept_power">Tridents Accept Power</a> - Allows tridents to accept the Power enchantment, increasing their ranged damage</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23balance.tridents_accept_sharpness">Tridents Accept Sharpness</a> - Allows tridents to accept the Sharpness enchantment, increasing their melee damage</li>
+</ul>
+<p><strong>Weird Tweaks</strong> - Opinionated changes</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.dimensional_tools">Dimensional Tools</a> - Completely configurable dimensional tool bonuses/penalties</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.disable_equip_sound">Disable Equip Sound</a> - Disables the unnecessary “Gear equips” sound that plays when your hands change, and is often glitchily played every tick</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.drop_exp_with_keep_inventory">Drop Experience With keepInventory</a> - If keepInventory is enabled, players still drop their experience when dying, but do so losslessly</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.endermen_dont_grief">Endermen Don’t Grief</a> - *<strong>New in v1.3.4*</strong> Endermen no longer place or pickup blocks</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.endermen_dont_squeal">Endermen Don’t Squeal</a> - Makes Endermen not make their growling or screeching sounds when angry</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.instant_pickup">Instant Pickup</a> - Drops from blocks and entities are instantly placed in your inventory if there’s room</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.photoallergic_creepers">Photoallergic Creepers</a> - Creepers burn in sunlight</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.photoresistant_mobs">Photoresistant Mobs</a> - Mobs don’t burn in sunlight</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.repelling_void">Déjà Void</a> - Players falling into the void teleports them back to the last place they were on the ground and deals 6 hearts of unblockable void damage</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23weird_tweaks.underwater_explosions">Underwater Explosions</a> - TNT and other explosives do block damage even underwater</li>
+</ul>
+<p><strong>What’s Old Is New Again</strong> - Forward ports of forgotten tidbits</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.billboard_drops">Billboard Drops</a> - Brings back billboarded flat item drops like on Fast graphics prior to 1.8 or like always prior to 1.4</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.blinking_drops">Blinking Drops</a> - Drops blink white like they did in Survival Test</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.block_logo">Block Logo</a> - Resurrects the Beta 1.2-era animated falling block logo</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.classic_block_drops">Classic Block Drops</a> - Draws block drops with a mipmapped or small portion of the texture</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.flat_items">Flat Items</a> - Brings back Indev flat first-person item models</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.janky_arm">Janky Arm</a> - Brings back Survival Test arm rotation</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.no_experience">No Experience</a> - <strong>New in v1.3.3</strong> Removes experience</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.old_lava">Old Lava</a> - Resurrects the old procedural lava texture from 1.4</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.old_sheep_shear">Old Sheep Shear</a> - *<strong>New in v1.3.4*</strong> Sheep drop wool when punched</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23woina.oof">Oof</a> - Brings back the old “Oof” hurt sound</li>
+</ul>
+<p><strong>Pedantry</strong> - Fixes for non-problems</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23pedantry.oak_is_apple">Oak Is Apple</a> - Oak trees become apple trees</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23pedantry.tnt_is_dynamite">TNT Is Dynamite</a> - TNT is renamed to Dynamite and doesn’t say TNT on it</li>
+</ul>
+<p><strong>Situational</strong> - Rarely useful small features</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23situational.all_damage_is_fatal">All Damage Is Fatal</a> - Any amount of damage done to an entity is unconditionally fatal</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23situational.disable_bees">Disable Bees</a> - *<strong>New in v1.3.4*</strong> Disables bee nest generation and all bee sounds</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23situational.disable_elytra">Disable Elytra</a> - <strong>New in v1.3.3</strong> Prevents using Elytra</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23situational.player_free_spawners">Player Free Spawners</a> - Mob spawners don’t require a player nearby to spawn</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23situational.weapons_accept_silk">Weapons Accept Silk</a> - Weapons can be enchanted with Silk Touch, and Silk Touch becomes incompatible with Looting</li>
+</ul>
+<p><strong>Experiments</strong> - Bad ideas given form</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23experiments.no_set_window_pos">No Set Window Pos</a> - Prevents the game from manually modifying the window position</li>
+<li><a target="_blank" rel="noopener" href="https://www.curseforge.com/linkout?remoteUrl=https://unascribed.com/fabrication/%23experiments.packed_atlases">Packed Atlases</a> - Disables rounding of atlases to the next power-of-two</li>
+</ul>
+<h3 id="Carrier"><a href="#Carrier" class="headerlink" title="Carrier"></a>Carrier</h3><p>Use Shift + Right Click to pick up something.</p>
+<p>刷怪砖，实体，箱子都可以</p>
+<h3 id="LambdaBetterGrass"><a href="#LambdaBetterGrass" class="headerlink" title="LambdaBetterGrass"></a>LambdaBetterGrass</h3><p>更好的草</p>
+<h3 id="All-Stone-to-Tools"><a href="#All-Stone-to-Tools" class="headerlink" title="All Stone to Tools"></a>All Stone to Tools</h3><p>安山岩制作工具</p>
+<h3 id="Easy-Emerald-Tools-amp-More"><a href="#Easy-Emerald-Tools-amp-More" class="headerlink" title="Easy Emerald Tools &amp; More"></a>Easy Emerald Tools &amp; More</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBf4d5a74ffcf6bd3f2279d4a7d77f85b9?method=download&shareKey=9747028128e576bd9ae9b09282551b95" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Vein-Mining"><a href="#Vein-Mining" class="headerlink" title="Vein Mining"></a>Vein Mining</h3><p>连锁挖矿（附魔）</p>
+<h3 id="Falling-Leaves"><a href="#Falling-Leaves" class="headerlink" title="Falling Leaves"></a>Falling Leaves</h3><p>落叶动画</p>
+<h3 id="GlobalSpawn"><a href="#GlobalSpawn" class="headerlink" title="GlobalSpawn"></a>GlobalSpawn</h3><p>命令设置世界重生点</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">qqq/globalspawnpoint<br></code></pre></td></tr></table></figure>
+
+<p>Cross dimension spawn point for all players without bed /respawn anchor/…</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli"><span class="hljs-string">/initialspawnpoint</span><br></code></pre></td></tr></table></figure>
+
+<p>One-time cross dimension spawn point for new players.</p>
+<h3 id="Flamingo-oh-oh-oh…"><a href="#Flamingo-oh-oh-oh…" class="headerlink" title="Flamingo, oh, oh, oh…"></a>Flamingo, oh, oh, oh…</h3><p>火烈鸟</p>
+<h3 id="Simple-Backpack"><a href="#Simple-Backpack" class="headerlink" title="Simple Backpack"></a>Simple Backpack</h3><p>背包</p>
+<h3 id="Wolves-With-Armor"><a href="#Wolves-With-Armor" class="headerlink" title="Wolves With Armor"></a>Wolves With Armor</h3><p>狼盔甲</p>
+<h3 id="Bookshelving"><a href="#Bookshelving" class="headerlink" title="Bookshelving"></a>Bookshelving</h3><p>各种材质书架</p>
+<h3 id="More-Curios-Totems-of-Undying"><a href="#More-Curios-Totems-of-Undying" class="headerlink" title="More Curios Totems of Undying"></a>More Curios Totems of Undying</h3><p>更多的不死图腾</p>
+<h3 id="Save-My-Stronghold"><a href="#Save-My-Stronghold" class="headerlink" title="Save My Stronghold"></a>Save My Stronghold</h3><p>防止堡垒生成的时候被卡掉</p>
+<h3 id="Monster-Of-The-Ocean-Depths"><a href="#Monster-Of-The-Ocean-Depths" class="headerlink" title="Monster Of The Ocean Depths"></a>Monster Of The Ocean Depths</h3><p>海洋怪物</p>
+<h3 id="Vanilla-Foods-Enhanced"><a href="#Vanilla-Foods-Enhanced" class="headerlink" title="Vanilla Foods Enhanced"></a>Vanilla Foods Enhanced</h3><p>食物增强</p>
+<h3 id="Simplex-Terrain-Generation"><a href="#Simplex-Terrain-Generation" class="headerlink" title="Simplex Terrain Generation"></a>Simplex Terrain Generation</h3><p>真实世界生产</p>
+<h3 id="Gentle-Fawn"><a href="#Gentle-Fawn" class="headerlink" title="Gentle Fawn"></a>Gentle Fawn</h3><p>鹿</p>
+<h3 id="Rare-Ice"><a href="#Rare-Ice" class="headerlink" title="Rare Ice"></a>Rare Ice</h3><p>冰下宝藏</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB1fcc36492fa479b060da53c388593cde?method=download&shareKey=a36b4e7b6eeb07d0bc2fc61dc59eb7ee" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Stay-True"><a href="#Stay-True" class="headerlink" title="Stay True"></a>Stay True</h3><p>真实材质</p>
+<h3 id="Skinned-Lanterns"><a href="#Skinned-Lanterns" class="headerlink" title="Skinned Lanterns"></a>Skinned Lanterns</h3><p>灯笼+skull=各种皮肤</p>
+<h3 id="Door-s-Coupling"><a href="#Door-s-Coupling" class="headerlink" title="Door(s) Coupling"></a>Door(s) Coupling</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7361f6221e53ce9416310ed7de3d7a8c?method=download&shareKey=4697be39d8f59f038e46f4aaa0eee94b" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Reroll"><a href="#Reroll" class="headerlink" title="Reroll"></a>Reroll</h3><p>附魔reroll</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB8a1dd2f59feec80509d2515fb13cabc6?method=download&shareKey=d5642969857ef470924e04f7b9229f43" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Fabric-Waystones"><a href="#Fabric-Waystones" class="headerlink" title="Fabric Waystones"></a>Fabric Waystones</h3><p>传送点</p>
+<h3 id="Broken-Name-Tags"><a href="#Broken-Name-Tags" class="headerlink" title="Broken Name Tags"></a>Broken Name Tags</h3><p>Broken Name Tags drop when a pet or an entity with a custom name dies. These nametags are meant to be a memento of your fallen friend. They include the name of the animal and the death message.</p>
+<p>Broken Name Tags can be repaired by surrounding them with string in a crafting table.</p>
+<h3 id="DragonLoot"><a href="#DragonLoot" class="headerlink" title="DragonLoot"></a>DragonLoot</h3><p>龙甲</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB8e4157070d7081b6ac92303f36c08805?method=download&shareKey=86ba494ab588a3c8648c1420eab3abfd" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Illuminations"><a href="#Illuminations" class="headerlink" title="Illuminations"></a>Illuminations</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB819498cecdcab2bf7c626e99a2b6eb3b?method=download&shareKey=004120cc48b4fb1c6806f69ae20e639b" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Better-Dropped-Items"><a href="#Better-Dropped-Items" class="headerlink" title="Better Dropped Items"></a>Better Dropped Items</h3><p>掉落物品躺平</p>
+<h3 id="XP-Storage"><a href="#XP-Storage" class="headerlink" title="XP Storage"></a>XP Storage</h3><p>经验存储</p>
+<h3 id="Go-Fish"><a href="#Go-Fish" class="headerlink" title="Go Fish"></a>Go Fish</h3><p>更好的钓鱼</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB3c39e997d86ee81fbd39fdcda71b3a57?method=download&shareKey=171b84ef05e92e86e0c73872e99eaf85" srcset="/img/loading.gif" lazyload alt="Go Fish banner"></p>
+<h3 id="Cave-Biomes"><a href="#Cave-Biomes" class="headerlink" title="Cave Biomes"></a>Cave Biomes</h3><p>洞穴生态</p>
+<h3 id="Trade"><a href="#Trade" class="headerlink" title="Trade"></a>Trade</h3><p>与玩家交易“V键”</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB017f8f44ebf83a0dab21742722dc205f?method=download&shareKey=c26a5760fbdd94babb386fa0d637c49f" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="RpgZ"><a href="#RpgZ" class="headerlink" title="RpgZ"></a>RpgZ</h3><p>This mod changes the way how you obtain mob loot. #RpgStyle</p>
+<p>Instead of just turning red to the site and dropping items, the killed mob will stay until it gets looted (4min countdown).</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB07f17fc35e6ad0afe4fddf9345392675?method=download&shareKey=5a5a3b88a1eca69e85b307d60aa67012" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="EditSign"><a href="#EditSign" class="headerlink" title="EditSign"></a>EditSign</h3><p>可修改告示牌</p>
+<h3 id="Curious-Elytra"><a href="#Curious-Elytra" class="headerlink" title="Curious Elytra"></a>Curious Elytra</h3><p>额外翅膀槽</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB42e783cdf8116bf138ac2dd060bd9964?method=download&shareKey=a29e8f694ebdeadbbb20e19bd2b92030" srcset="/img/loading.gif" lazyload alt="Curious Elytra screenshot"></p>
+<h3 id="The-Aether-Reborn"><a href="#The-Aether-Reborn" class="headerlink" title="The Aether Reborn"></a>The Aether Reborn</h3><p>以太</p>
+<h3 id="RandomPatches"><a href="#RandomPatches" class="headerlink" title="RandomPatches"></a>RandomPatches</h3><p>各种修复原版bug</p>
+<h3 id="Gilded-Netherite"><a href="#Gilded-Netherite" class="headerlink" title="Gilded Netherite"></a>Gilded Netherite</h3><p>下界锭增强</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB89a7f5f74cc8c8512ef8ed75688cc264?method=download&shareKey=cae0c615e0f7de08a5666af562a379fc" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Home-Camp"><a href="#Home-Camp" class="headerlink" title="Home Camp"></a>Home Camp</h3><p>Sneak+Right Click a campfire to make it your respawn point</p>
+<h3 id="Quartz-Elevator"><a href="#Quartz-Elevator" class="headerlink" title="Quartz Elevator"></a>Quartz Elevator</h3><p>石英电梯</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB3d9ab29399e9b287e9ef97960af21058?method=download&shareKey=d681d5599ad0bbbb07e31fb4ac7904bf" srcset="/img/loading.gif" lazyload alt="quartz elevator recipe1"></p>
+<h3 id="StuffZ"><a href="#StuffZ" class="headerlink" title="StuffZ"></a>StuffZ</h3><p>奇怪的东西</p>
+<h3 id="AdventureZ"><a href="#AdventureZ" class="headerlink" title="AdventureZ"></a>AdventureZ</h3><p>增加一些怪物，建筑，物品</p>
+<h3 id="Animal-Feeding-Trough"><a href="#Animal-Feeding-Trough" class="headerlink" title="Animal Feeding Trough"></a>Animal Feeding Trough</h3><p>喂动物的盆</p>
+<h3 id="Invisible-Frames"><a href="#Invisible-Frames" class="headerlink" title="Invisible Frames"></a>Invisible Frames</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB9b5f9804bb0f85a53b1663aad2b56bb2?method=download&shareKey=bd8b73195bc35e103e4c215bcddc4493" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Better-Enchanted-Books"><a href="#Better-Enchanted-Books" class="headerlink" title="Better Enchanted Books"></a>Better Enchanted Books</h3><p>显示一些附魔属性，没加新的内容</p>
+<h3 id="Pling"><a href="#Pling" class="headerlink" title="Pling"></a>Pling</h3><p>Plays a sound when Minecraft is finished loading.啊这</p>
+<h3 id="Terrestria"><a href="#Terrestria" class="headerlink" title="Terrestria"></a>Terrestria</h3><p>生态群系</p>
+<h3 id="Mooblooms"><a href="#Mooblooms" class="headerlink" title="Mooblooms"></a>Mooblooms</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB505310523de31422fce382634ff30f27?method=download&shareKey=7be4dc8a7436279fcf9a3c6566b2c413" srcset="/img/loading.gif" lazyload alt="Mooblooms"></p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB0c099720ef44e782addf275b62772840?method=download&shareKey=b9813d36ace07e92691e74a7489d0dbe" srcset="/img/loading.gif" lazyload alt="Cluckshrooms"></p>
+<h3 id="YUNG’s-Better-Caves"><a href="#YUNG’s-Better-Caves" class="headerlink" title="YUNG’s Better Caves"></a>YUNG’s Better Caves</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7ad0bcdb44693f3b459906483c27d642?method=download&shareKey=246a9328fc14639ba5d39a4b6ebfc3f9" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Fabrishot"><a href="#Fabrishot" class="headerlink" title="Fabrishot"></a>Fabrishot</h3><p>Take large screenshots because why not. Use Mod Menu and Cloth Config to change the resolution from the default (3840x2160)</p>
+<p><strong>PRESS F9 TO USE!</strong></p>
+<h3 id="Wild-World"><a href="#Wild-World" class="headerlink" title="Wild World"></a>Wild World</h3><p>世界生成</p>
+<h3 id="Desolation"><a href="#Desolation" class="headerlink" title="Desolation"></a>Desolation</h3><p>新群系</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB2dc8dd88df298044b8803b35ad0ee4ba?method=download&shareKey=62cb7e3f9053d1c91adea261915e9f82" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Biome-Picker"><a href="#Biome-Picker" class="headerlink" title="Biome Picker"></a>Biome Picker</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB2138af46a6d28232839ee8ff15b3fd66?method=download&shareKey=56d3867dce0689012a5ee328655e4f64" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="YUNG’s-Better-Mineshafts"><a href="#YUNG’s-Better-Mineshafts" class="headerlink" title="YUNG’s Better Mineshafts"></a>YUNG’s Better Mineshafts</h3><p>更好的矿道</p>
+<h3 id="Portal-Tags"><a href="#Portal-Tags" class="headerlink" title="Portal Tags"></a>Portal Tags</h3><p>跨portal传送</p>
+<h3 id="Beholder’s-Variations"><a href="#Beholder’s-Variations" class="headerlink" title="Beholder’s Variations"></a>Beholder’s Variations</h3><p>各种材料</p>
+<h3 id="Traverse"><a href="#Traverse" class="headerlink" title="Traverse"></a>Traverse</h3><p>群系</p>
+<h3 id="Beacon-Overhaul"><a href="#Beacon-Overhaul" class="headerlink" title="Beacon Overhaul"></a>Beacon Overhaul</h3><p>更nb的信标</p>
+<h3 id="Bedspreads"><a href="#Bedspreads" class="headerlink" title="Bedspreads"></a>Bedspreads</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB07f3ddba0208ccaeb9a17626089d3982?method=download&shareKey=4145520927e5aff33fe64a8fb97e20c8" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>在床上贴banner</p>
+<h3 id="Mob-proof-crystals"><a href="#Mob-proof-crystals" class="headerlink" title="Mob proof crystals"></a>Mob proof crystals</h3><p>放末地水晶 64x64x64 blocks出生点保护</p>
+<h3 id="More-Totems-Of-Undying"><a href="#More-Totems-Of-Undying" class="headerlink" title="More Totems Of Undying"></a>More Totems Of Undying</h3><p>各种不死图腾</p>
+<h3 id="Croptopia"><a href="#Croptopia" class="headerlink" title="Croptopia"></a>Croptopia</h3><p>种植向</p>
+<h3 id="Complete-Bone-Meal"><a href="#Complete-Bone-Meal" class="headerlink" title="Complete Bone Meal"></a>Complete Bone Meal</h3><p>种植向</p>
+<p>The new “Bone Meal”-able crops include all 6 vanilla growables which were previously missing:</p>
+<ul>
+<li>Cactus: Grows 2 blocks taller (Not limited to 3 blocks tall, like when grown naturally)</li>
+<li>Vines: Spreads further outward</li>
+<li>Nether Wart: Increases growth stage</li>
+<li>Sugar Cane: Grows 2 blocks taller (Not limited to 3 blocks tall, like when grown naturally)</li>
+<li>Chorus Flowers: Generates a grown Chorus Flower tree</li>
+<li>Coral Blocks: Generates a random Coral structure (if underwater)</li>
+</ul>
+<h3 id="Glimmering-Potions"><a href="#Glimmering-Potions" class="headerlink" title="Glimmering Potions"></a>Glimmering Potions</h3><p>Glimmering Potions adds in a few new unique drinks based on Terraria’s potions, as well as some misc. potion related features. Each potion has a unique effect and can be found in any dungeon chest. </p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB79967c403e4baf3678d360d2752f54fd?method=download&shareKey=ce1f3137489af1cc80abbf2f841a49e3" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Enderporter"><a href="#Enderporter" class="headerlink" title="Enderporter"></a>Enderporter</h3><p>传送</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB2d97259e5947adaf625b7ed8f11a2cae?method=download&shareKey=376afa1b690793f653a39ce098b38627" srcset="/img/loading.gif" lazyload alt="alt-text"></p>
+<h3 id="Chillager"><a href="#Chillager" class="headerlink" title="Chillager"></a>Chillager</h3><p>群系</p>
+<h3 id="Fabric-Seasons"><a href="#Fabric-Seasons" class="headerlink" title="Fabric Seasons"></a>Fabric Seasons</h3><p>季节</p>
+<h3 id="Repurposed-Structures"><a href="#Repurposed-Structures" class="headerlink" title="Repurposed Structures"></a>Repurposed Structures</h3><p>各种地牢</p>
+<h3 id="Strange-Berries"><a href="#Strange-Berries" class="headerlink" title="Strange Berries"></a>Strange Berries</h3><p>各种berry</p>
+<h3 id="Biome-Locator"><a href="#Biome-Locator" class="headerlink" title="Biome Locator"></a>Biome Locator</h3><p>群系指南针</p>
+<h3 id="Earth2Java"><a href="#Earth2Java" class="headerlink" title="Earth2Java"></a>Earth2Java</h3><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver">This <span class="hljs-keyword">mod</span> <span class="hljs-built_in">add</span> mobs <span class="hljs-keyword">and</span> <span class="hljs-keyword">items</span> <span class="hljs-built_in">from</span> Minecraft Earth <span class="hljs-built_in">to</span> Minecraft Java Edition.<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB0112ae01d0a652f4ecbabb45a193e2a2?method=download&shareKey=2fd0a3fb0c71388e7c646bebad962c85" srcset="/img/loading.gif" lazyload alt="Entities"></p>
+<h3 id="Oh-The-Biomes-You’ll-Go"><a href="#Oh-The-Biomes-You’ll-Go" class="headerlink" title="Oh The Biomes You’ll Go"></a>Oh The Biomes You’ll Go</h3><p>各种群系</p>
+<h3 id="BackSlot"><a href="#BackSlot" class="headerlink" title="BackSlot"></a>BackSlot</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB359ac5a6fdc15e5cdc723b63fc45126b?method=download&shareKey=999c29246ec42a5330d954a6e77e5170" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="Dual-Riders"><a href="#Dual-Riders" class="headerlink" title="Dual Riders"></a>Dual Riders</h3><p>允许两个人骑马</p>
+<h3 id="FallingTree"><a href="#FallingTree" class="headerlink" title="FallingTree"></a>FallingTree</h3><p>一键砍树</p>
+<h3 id="Consistency"><a href="#Consistency" class="headerlink" title="Consistency+"></a>Consistency+</h3><p>各种材质</p>
+<h3 id="Curio-of-Undying"><a href="#Curio-of-Undying" class="headerlink" title="Curio of Undying"></a>Curio of Undying</h3><p>不死图腾的物品栏</p>
+<h3 id="More-Respawn-Anchors"><a href="#More-Respawn-Anchors" class="headerlink" title="More Respawn Anchors"></a>More Respawn Anchors</h3><p>更多重生锚</p>
+<h3 id="Grass-Bypass"><a href="#Grass-Bypass" class="headerlink" title="Grass Bypass"></a>Grass Bypass</h3><p>可以跨过高草丛打击敌人</p>
+<h3 id="Wandering-Collector"><a href="#Wandering-Collector" class="headerlink" title="Wandering Collector"></a>Wandering Collector</h3><p>Whenever a player dropped item despawns/gets destroyed, the stacks get internally added to a list and have a chance to show up next time when trading with a Wandering Trader.</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#gitalk-container', function() {
+      Fluid.utils.createCssLink('/css/gitalk.css')
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js', function() {
+        var options = Object.assign(
+          {"clientID":"f19b461a0235c4998c87","clientSecret":"8c60591b92576a4194fe5a0193811441516e0a7d","repo":"kariakidec.github.io","owner":"KariakiDec","admin":["KariakiDec"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":false,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {
+            id: 'fd069be5a7232073b5a35b60071505fc'
+          }
+        )
+        var gitalk = new Gitalk(options);
+        gitalk.render('gitalk-container');
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     Copyright © 2021 Kariaki.Dec <br>  Powered by  <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      jQuery('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      jQuery('#modalSearch').on('shown.bs.modal', function() {
+        jQuery('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
